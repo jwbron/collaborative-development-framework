@@ -74,67 +74,74 @@ The Post-LLM SE vision requires six foundational capabilities:
 ┌─────────────────────────────────────────────────────────────────────┐
 │                    The Six Foundations                              │
 │                                                                     │
-│  ┌─────────────────────────────────────────────────────────────┐    │
-│  │           1. MULTI-AGENT FRAMEWORK                          │    │
-│  │              The execution layer powering everything        │    │
-│  └───────┬──────────────┬──────────────┬──────────────┬────────┘    │
-│          │              │              │              │             │
-│          ▼              ▼              ▼              ▼             │
-│  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐     │
-│  │ 2. CPF     │  │ 3. PR      │  │ 4. CODE    │  │ 5. SELF-   │     │
-│  │ Collab.    │  │ REVIEWER   │  │ ANALYSIS   │  │ REFLECTION │     │
-│  │ Planning   │  │ System     │  │ Engine     │  │ Framework  │     │
-│  └──────┬─────┘  └──────┬─────┘  └──────┬─────┘  └──────┬─────┘     │
-│         │               │               │               │           │
-│         └───────────────┴───────┬───────┴───────────────┘           │
-│                                 │                                   │
-│                                 ▼                                   │
-│         ┌───────────────────────────────────────────────┐           │
-│         │      6. INDEX-BASED DOCUMENTATION             │           │
-│         │         The navigation layer                  │           │
-│         └───────────────────────────────────────────────┘           │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │              FOUNDATIONAL LAYER (Build First)                 │  │
+│  │  ┌─────────────────────────┐  ┌─────────────────────────┐     │  │
+│  │  │ 1. DOCUMENTATION        │  │ 2. COLLABORATIVE        │     │  │
+│  │  │    INTELLIGENCE         │  │    PLANNING (CPF)       │     │  │
+│  │  │    LLMs need context    │  │    Humans drive intent  │     │  │
+│  │  └───────────┬─────────────┘  └─────────────┬───────────┘     │  │
+│  └──────────────┼──────────────────────────────┼─────────────────┘  │
+│                 │                              │                    │
+│                 └──────────────┬───────────────┘                    │
+│                                ▼                                    │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │           3. MULTI-AGENT FRAMEWORK                            │  │
+│  │              The execution layer enabling all capabilities    │  │
+│  └───────┬──────────────┬──────────────┬─────────────────────────┘  │
+│          │              │              │                            │
+│          ▼              ▼              ▼                            │
+│  ┌────────────┐  ┌────────────┐  ┌────────────┐                     │
+│  │ 4. PR      │  │ 5. CODE    │  │ 6. SELF-   │                     │
+│  │ REVIEWER   │  │ ANALYSIS   │  │ REFLECTION │                     │
+│  │ System     │  │ Engine     │  │ Framework  │                     │
+│  └────────────┘  └────────────┘  └────────────┘                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
+> **Why Documentation Intelligence and CPF are Foundational:**
+> Without proper documentation, LLMs cannot efficiently understand or navigate codebases. Without structured collaboration (CPF), human intent cannot be reliably translated into LLM action. These two capabilities are prerequisites for everything else—we use them to build and maintain all other foundations.
+
 | Foundation | What It Does | Enables |
 |------------|--------------|---------|
+| **Documentation Intelligence** | Always-current, navigable documentation | LLM context, all capabilities |
+| **Collaborative Planning Framework** | Structured human-LLM collaboration | Pillar 2, all planning |
 | **Multi-Agent Framework** | Coordinates specialized LLM agents | All capabilities |
-| **Collaborative Planning Framework** | Structured human-LLM collaboration | Pillar 2 |
 | **PR Reviewer System** | Automated specialized code review | Pillar 1 |
 | **Codebase Analysis Engine** | Deep code understanding | All capabilities |
 | **Continual Self-Reflection** | Autonomous system improvement | Pillar 3 |
-| **Index-Based Documentation** | Always-current navigation | Pillars 1, 2 |
 
 ---
 
-## Foundation 1: Multi-Agent Framework
+## Foundation 1: Documentation Intelligence
 
-**Purpose:** Provide infrastructure for coordinating multiple specialized LLM agents.
+**Purpose:** Maintain always-current, navigable documentation that enables LLM efficiency.
 
-**Strategic Intent:** Enable complex tasks to be decomposed and handled by purpose-built agents working in concert.
+**Strategic Intent:** Keep humans and LLMs oriented through automated index generation, drift detection, and context provision. Without proper documentation, LLMs cannot efficiently understand or navigate codebases.
+
+### Why Documentation Intelligence is Foundational
+
+> **Core Insight:** Documentation is not an afterthought—it's the primary interface between human intent and LLM capability.
+
+LLMs are only as effective as the context they receive. Documentation Intelligence ensures:
+- LLMs always have accurate, up-to-date context about the codebase
+- Humans can navigate and understand what exists before planning new work
+- All other foundations can leverage reliable documentation for their operations
 
 ### Key Capabilities
 
-- **Agent Registry**: Catalog of agents with capabilities and constraints
-- **Task Routing**: Match tasks to appropriate agents
-- **Agent Communication**: Enable handoffs and context sharing
-- **Observability**: Full execution tracing and token tracking
-
-### Initial Agent Types
-
-| Agent | Role |
-|-------|------|
-| Orchestrator | Task decomposition and delegation |
-| Researcher | Information gathering |
-| Implementer | Code generation |
-| Reviewer | Code analysis |
-| Documenter | Documentation maintenance |
+- **Automated Index Generation**: Index from directory structure
+- **Cross-Reference Maintenance**: Detect and maintain links
+- **Drift Detection**: Find where docs diverge from code
+- **Freshness Tracking**: Flag stale documentation
+- **Context Provision**: Supply relevant documentation to LLM agents
 
 ### Open Questions
 
-- How much context should agents share?
-- When should agents run in parallel vs. sequential?
-- How do agents recover from failures?
+- Markdown files as source of truth, or generate from code?
+- Real-time vs. batch index updates?
+- How do LLMs best consume documentation?
+- What documentation coverage is "good enough" to start?
 
 ---
 
@@ -189,7 +196,38 @@ In the CPF model, **documentation drives development**, not the reverse:
 
 ---
 
-## Foundation 3: PR Reviewer System
+## Foundation 3: Multi-Agent Framework
+
+**Purpose:** Provide infrastructure for coordinating multiple specialized LLM agents.
+
+**Strategic Intent:** Enable complex tasks to be decomposed and handled by purpose-built agents working in concert. This framework leverages Documentation Intelligence for context and CPF for planning, then enables all downstream capabilities.
+
+### Key Capabilities
+
+- **Agent Registry**: Catalog of agents with capabilities and constraints
+- **Task Routing**: Match tasks to appropriate agents
+- **Agent Communication**: Enable handoffs and context sharing
+- **Observability**: Full execution tracing and token tracking
+
+### Initial Agent Types
+
+| Agent | Role |
+|-------|------|
+| Orchestrator | Task decomposition and delegation |
+| Researcher | Information gathering |
+| Implementer | Code generation |
+| Reviewer | Code analysis |
+| Documenter | Documentation maintenance |
+
+### Open Questions
+
+- How much context should agents share?
+- When should agents run in parallel vs. sequential?
+- How do agents recover from failures?
+
+---
+
+## Foundation 4: PR Reviewer System
 
 **Purpose:** Automated, specialized code review that catches issues before human review.
 
@@ -220,7 +258,7 @@ In the CPF model, **documentation drives development**, not the reverse:
 
 ---
 
-## Foundation 4: Codebase Analysis Engine
+## Foundation 5: Codebase Analysis Engine
 
 **Purpose:** Deep, structured understanding of code.
 
@@ -250,7 +288,7 @@ In the CPF model, **documentation drives development**, not the reverse:
 
 ---
 
-## Foundation 5: Continual Self-Reflection Framework
+## Foundation 6: Continual Self-Reflection Framework
 
 **Purpose:** Enable the system to observe and improve itself.
 
@@ -280,27 +318,6 @@ In the CPF model, **documentation drives development**, not the reverse:
 
 ---
 
-## Foundation 6: Index-Based Documentation Strategy
-
-**Purpose:** Maintain always-current, navigable documentation.
-
-**Strategic Intent:** Keep humans and LLMs oriented through automated index generation and drift detection.
-
-### Key Capabilities
-
-- **Automated Index Generation**: Index from directory structure
-- **Cross-Reference Maintenance**: Detect and maintain links
-- **Drift Detection**: Find where docs diverge from code
-- **Freshness Tracking**: Flag stale documentation
-
-### Open Questions
-
-- Markdown files as source of truth, or generate from code?
-- Real-time vs. batch index updates?
-- How do LLMs best consume documentation?
-
----
-
 ## High-Level Implementation Plan
 
 > **Principle:** Each phase produces working documents AND working code. Documents evolve alongside implementation.
@@ -310,18 +327,20 @@ In the CPF model, **documentation drives development**, not the reverse:
 ```
 Phase 0: Strategic Foundation (THIS DOCUMENT)
     ↓
-Phase 1: Multi-Agent Core
+Phase 1: Documentation Intelligence ←── LLMs need context to function
     ↓
-Phase 2: Collaborative Planning Framework ←── Enables structured development
+Phase 2: Collaborative Planning Framework ←── Humans drive intent, LLMs execute
     ↓
-Phase 3: PR Review Pipeline ←── Quality gate for all subsequent work
+Phase 3: Multi-Agent Core ←── Execution layer (uses Phases 1 & 2)
     ↓
-Phase 4: Codebase Analysis
+Phase 4: PR Review Pipeline ←── Quality gate for all subsequent work
     ↓
-Phase 5: Self-Reflection
+Phase 5: Codebase Analysis
     ↓
-Phase 6: Documentation Intelligence
+Phase 6: Self-Reflection
 ```
+
+> **Why this order?** Documentation Intelligence and CPF are the two foundational capabilities that enable everything else. Without proper documentation, LLMs cannot efficiently navigate codebases. Without structured collaboration, human intent cannot be reliably translated into action. We use these two core functions to build and maintain all other foundations.
 
 ### Phase 0: Strategic Foundation (Current)
 
@@ -337,9 +356,39 @@ Phase 6: Documentation Intelligence
 - Clear methodology (CPF) established
 - Six foundations defined at appropriate level of abstraction
 
-### Phase 1: Multi-Agent Core
+### Phase 1: Documentation Intelligence
 
-**Goal:** Build the execution layer that powers everything.
+**Goal:** Establish the documentation foundation that enables LLM efficiency.
+
+**Key Deliverables:**
+- Automated index generation from directory structure
+- Cross-reference and link maintenance
+- Drift detection between docs and code
+- Freshness tracking system
+
+**Exit Criteria:**
+- Documentation index is auto-generated and current
+- LLMs can reliably find relevant context
+- Stale documentation is flagged
+
+### Phase 2: Collaborative Planning Framework
+
+**Goal:** Enable structured human-LLM collaboration for all subsequent work.
+
+**Key Deliverables:**
+- Phase management (Ideation → Assessment → Reinforcement → Planning)
+- Decision capture with rationale
+- Context persistence across sessions
+- Specification output generation
+
+**Exit Criteria:**
+- Can guide conversations through CPF phases
+- Human decisions are captured with rationale
+- Planning artifacts are versioned and machine-readable
+
+### Phase 3: Multi-Agent Core
+
+**Goal:** Build the execution layer that powers all capabilities.
 
 **Key Deliverables:**
 - Agent registry and lifecycle management
@@ -350,7 +399,7 @@ Phase 6: Documentation Intelligence
 - Can register, route to, and execute agents
 - At least 3 working agents (Orchestrator, Implementer, Researcher)
 
-### Phases 2-6: To Be Planned
+### Phases 4-6: To Be Planned
 
 Detailed planning for subsequent phases will follow CPF:
 1. Each phase gets its own Ideation → Assessment → Reinforcement → Planning cycle
@@ -388,9 +437,11 @@ Detailed planning for subsequent phases will follow CPF:
 ### Foundation-Specific
 | Foundation | Metric | Direction |
 |------------|--------|-----------|
-| Multi-Agent | Task completion rate | High |
+| Documentation Intelligence | Context relevance | High |
 | CPF | First-attempt success | High |
+| Multi-Agent | Task completion rate | High |
 | PR Review | Issues caught pre-human | Majority |
+| Codebase Analysis | Query accuracy | High |
 | Self-Reflection | Proposals accepted | Majority |
 
 Organizations should define specific targets based on their baseline measurements and context.
@@ -410,7 +461,7 @@ Organizations should define specific targets based on their baseline measurement
 
 **Immediate actions upon approval:**
 1. Merge this document
-2. Begin Phase 1 (Multi-Agent Core) design using CPF
+2. Begin Phase 1 (Documentation Intelligence) design using CPF
 3. Establish document review cadence
 
 **This document will evolve** as implementation reveals gaps and new insights emerge. That's intentional—documents and code evolve together.
