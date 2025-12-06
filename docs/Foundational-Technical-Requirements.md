@@ -352,7 +352,7 @@ Phase 6: Documentation Intelligence
 
 ### Phases 2-6: To Be Planned
 
-Detailed planning for subsequent phases will follow IPF:
+Detailed planning for subsequent phases will follow CPF:
 1. Each phase gets its own Ideation → Assessment → Reinforcement → Planning cycle
 2. Phase planning happens just-in-time, informed by learnings from prior phases
 3. Human checkpoints at each phase transition
@@ -410,7 +410,7 @@ Organizations should define specific targets based on their baseline measurement
 
 **Immediate actions upon approval:**
 1. Merge this document
-2. Begin Phase 1 (Multi-Agent Core) design using IPF
+2. Begin Phase 1 (Multi-Agent Core) design using CPF
 3. Establish document review cadence
 
 **This document will evolve** as implementation reveals gaps and new insights emerge. That's intentional—documents and code evolve together.
