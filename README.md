@@ -2,9 +2,13 @@
 
 A pragmatic philosophy and framework for software engineering in the post-LLM era.
 
+## Purpose
+
+This repository provides a **collection of documents designed to help technical organizations bootstrap themselves into pragmatic post-LLM software development workflows**. Rather than prescribing a single approach, it offers strategic guidance, implementation patterns, and decision frameworks that teams can adapt to their specific context.
+
 ## Overview
 
-This repository contains strategic documentation for a new paradigm of human-LLM collaboration in software development. The framework is built on three mutually reinforcing pillars:
+The framework is built on three mutually reinforcing pillars:
 
 | Pillar | Core Question | Guiding Value |
 |--------|---------------|---------------|
