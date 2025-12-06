@@ -415,17 +415,17 @@ For agents to surface process issues, the culture must welcome feedback:
 
 ### Leading Indicators
 
-| Metric | Target | Why It Matters |
-|--------|--------|----------------|
-| **Improvement proposals/week** | 3-10 | Agent is actively self-reflecting |
-| **Proposal acceptance rate** | >70% | Proposals are high-quality |
-| **Time from detection to proposal** | <7 days | Fast feedback loop |
-| **Human review comments declining** | Week over week | Automated checks catching more |
+| Metric | Direction | Why It Matters |
+|--------|-----------|----------------|
+| **Improvement proposals/week** | Consistent volume | Agent is actively self-reflecting |
+| **Proposal acceptance rate** | High | Proposals are high-quality |
+| **Time from detection to proposal** | Short | Fast feedback loop |
+| **Human review comments** | Declining | Automated checks catching more |
 
 ### Lagging Indicators
 
-| Metric | Target | Why It Matters |
-|--------|--------|----------------|
+| Metric | Direction | Why It Matters |
+|--------|-----------|----------------|
 | **Token efficiency** | Improving | Less waste on rework and exploration |
 | **First-submission PR approval rate** | Increasing | Quality improving |
 | **Rework rate** | Decreasing | Getting it right the first time |
@@ -433,9 +433,9 @@ For agents to surface process issues, the culture must welcome feedback:
 
 ### North Star Metric
 
-> **Percentage of systemic issues identified and addressed proactively by the agent**
+> **Systemic issues identified and addressed proactively by the agent**
 
-This captures the core goal: an LLM system that continuously improves itself with minimal human intervention.
+This captures the core goal: an LLM system that continuously improves itself with minimal human intervention. Organizations should define specific targets based on their context and maturity level.
 
 ---
 

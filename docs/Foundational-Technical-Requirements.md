@@ -379,19 +379,21 @@ Detailed planning for subsequent phases will follow IPF:
 ## Success Metrics
 
 ### North Star
-| Metric | Target |
-|--------|--------|
-| Human cognitive load reduction | -50% |
-| Defect escape rate | -30% |
-| Development velocity | +25% |
+| Metric | Direction |
+|--------|-----------|
+| Human cognitive load | Reduced |
+| Defect escape rate | Reduced |
+| Development velocity | Increased |
 
 ### Foundation-Specific
-| Foundation | Metric | Target |
-|------------|--------|--------|
-| Multi-Agent | Task completion rate | >95% |
-| CPF | First-attempt success | >80% |
-| PR Review | Issues caught pre-human | >70% |
-| Self-Reflection | Proposals accepted | >60% |
+| Foundation | Metric | Direction |
+|------------|--------|-----------|
+| Multi-Agent | Task completion rate | High |
+| CPF | First-attempt success | High |
+| PR Review | Issues caught pre-human | Majority |
+| Self-Reflection | Proposals accepted | Majority |
+
+Organizations should define specific targets based on their baseline measurements and context.
 
 ---
 
