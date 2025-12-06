@@ -426,7 +426,4 @@ Detailed planning for subsequent phases will follow IPF:
 
 ---
 
-**Last Updated:** 2025-12-06
-**Next Review:** After human approval
-
 Authored-by: jib

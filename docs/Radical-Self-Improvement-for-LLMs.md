@@ -465,7 +465,4 @@ This captures the core goal: an LLM system that continuously improves itself wit
 
 ---
 
-**Last Updated:** 2025-12-06
-**Next Review:** 2026-01-06 (Monthly)
-
 Authored-by: jib

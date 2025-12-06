@@ -529,22 +529,4 @@ Human: "The LLM said this is the best approach, so it must be"
 
 ---
 
-## A Note on Naming
-
-This philosophy could be called several things:
-
-- **Human-Driven, LLM-Navigated Development** - Emphasizes the driver/navigator metaphor
-- **Cognitive Partnership Development** - Emphasizes the complementary strengths
-- **Amplified Development** - Emphasizes human capabilities being enhanced
-- **Sustainable AI-Augmented Development** - Emphasizes the long-term human benefits
-
-The name matters less than the principle: **humans focus on what humans do best; LLMs handle what LLMs do best; the result is greater than either alone.**
-
-What matters is the rigor with which you apply it: clear roles, consistent handoffs, disciplined checkpoints.
-
----
-
-**Last Updated:** 2025-12-06
-**Next Review:** 2026-01-06 (Monthly)
-
 Authored-by: jib
