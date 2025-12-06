@@ -73,11 +73,10 @@ Traditional software development places an enormous cognitive burden on humans:
 │                            │  • Is the documentation current?  │
 │                            │  • Did I miss any edge cases?     │
 │                            │                                   │
-│        (~30%)              │          (~70%)                   │
 └────────────────────────────────────────────────────────────────┘
 ```
 
-The majority of cognitive effort goes toward ensuring correctness, consistency, and completeness—tasks that require exhaustive attention to detail rather than creative insight.
+A significant portion of cognitive effort goes toward ensuring correctness, consistency, and completeness—tasks that require exhaustive attention to detail rather than creative insight.
 
 ### The Human-Driven, LLM-Navigated Model
 
