@@ -34,10 +34,10 @@ This document presents **Radical Self-Improvement** as a design principle: LLM s
 ## Table of Contents
 
 - [The Vision: Self-Improving LLM Agents](#the-vision-self-improving-llm-agents)
-- [Pillar 1: Automated Maintenance](#pillar-1-automated-maintenance)
-- [Pillar 2: Continuous Self-Reflection](#pillar-2-continuous-self-reflection)
-- [Pillar 3: PR Review Reviewer](#pillar-3-pr-review-reviewer)
-- [Pillar 4: Strategic Human Escalation](#pillar-4-strategic-human-escalation)
+- [Capability 1: Automated Maintenance](#capability-1-automated-maintenance)
+- [Capability 2: Continuous Self-Reflection](#capability-2-continuous-self-reflection)
+- [Capability 3: PR Review Reviewer](#capability-3-pr-review-reviewer)
+- [Capability 4: Strategic Human Escalation](#capability-4-strategic-human-escalation)
 - [The Transferable Culture](#the-transferable-culture)
 - [Implementation Principles](#implementation-principles)
 - [Success Metrics](#success-metrics)
@@ -96,7 +96,7 @@ This is care made operational: the system actively nurtures its own improvement 
 
 ---
 
-## Pillar 1: Automated Maintenance
+## Capability 1: Automated Maintenance
 
 ### Repository Hygiene
 
@@ -143,7 +143,7 @@ The first level of self-improvement: **automated housekeeping**. The agent shoul
 
 ---
 
-## Pillar 2: Continuous Self-Reflection
+## Capability 2: Continuous Self-Reflection
 
 ### The Metacognitive Loop
 
@@ -212,7 +212,7 @@ Self-reflection requires memory that persists across sessions. The agent should 
 
 ---
 
-## Pillar 3: PR Review Reviewer
+## Capability 3: PR Review Reviewer
 
 ### The Meta-Review Concept
 
@@ -275,7 +275,7 @@ This is what care looks like in practice: feedback isn't just given—it's inves
 
 ---
 
-## Pillar 4: Strategic Human Escalation
+## Capability 4: Strategic Human Escalation
 
 ### Inverting the Feedback Model
 
