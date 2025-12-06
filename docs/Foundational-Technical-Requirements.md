@@ -17,9 +17,12 @@ Before diving into technical requirements, we establish the methodology for deve
 
 ### The Four Phases
 
+> **Note on Phase Terminology:** CPF has two complementary phase sequences depending on context. This document uses the **strategic planning** phases (IDEATION → ASSESSMENT → REINFORCEMENT → PLANNING) for evaluating and shaping new initiatives. The [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) document describes the **implementation workflow** phases (ELICITATION → DESIGN → PLANNING → HANDOFF) for executing approved work. Both are part of CPF—one for deciding *what* to build, the other for *how* to build it.
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│              Collaborative Planning Framework (CPF)             │
+│         Collaborative Planning Framework (CPF)                  │
+│              Strategic Planning Phases                          │
 │                                                                 │
 │   IDEATION ──▶ ASSESSMENT ──▶ REINFORCEMENT ──▶ PLANNING       │
 │                                                                 │
@@ -37,14 +40,14 @@ Before diving into technical requirements, we establish the methodology for deve
 
 ### How This Framework Applies to This Document
 
-This document is the first artifact built using IPF:
+This document is the first artifact built using CPF:
 
 - **Ideation**: The vision for Post-LLM SE emerged from observing LLM development patterns
 - **Assessment**: We determined this vision is both valuable and achievable
 - **Reinforcement**: This document sharpens the concept into six technical foundations
 - **Planning**: The high-level plan below will guide implementation
 
-**Once this document is approved**, detailed design documents for each foundation will follow the same IPF process.
+**Once this document is approved**, detailed design documents for each foundation will follow the same CPF process.
 
 ---
 
@@ -78,8 +81,8 @@ The Post-LLM SE vision requires six foundational capabilities:
 │          │              │              │              │             │
 │          ▼              ▼              ▼              ▼             │
 │  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐     │
-│  │ 2. IPF     │  │ 3. PR      │  │ 4. CODE    │  │ 5. SELF-   │     │
-│  │ Interactive│  │ REVIEWER   │  │ ANALYSIS   │  │ REFLECTION │     │
+│  │ 2. CPF     │  │ 3. PR      │  │ 4. CODE    │  │ 5. SELF-   │     │
+│  │ Collab.    │  │ REVIEWER   │  │ ANALYSIS   │  │ REFLECTION │     │
 │  │ Planning   │  │ System     │  │ Engine     │  │ Framework  │     │
 │  └──────┬─────┘  └──────┬─────┘  └──────┬─────┘  └──────┬─────┘     │
 │         │               │               │               │           │
@@ -331,7 +334,7 @@ Phase 6: Documentation Intelligence
 
 **Exit Criteria:**
 - Human approval of strategic direction
-- Clear methodology (IPF) established
+- Clear methodology (CPF) established
 - Six foundations defined at appropriate level of abstraction
 
 ### Phase 1: Multi-Agent Core
@@ -386,7 +389,7 @@ Detailed planning for subsequent phases will follow IPF:
 | Foundation | Metric | Target |
 |------------|--------|--------|
 | Multi-Agent | Task completion rate | >95% |
-| IPF | First-attempt success | >80% |
+| CPF | First-attempt success | >80% |
 | PR Review | Issues caught pre-human | >70% |
 | Self-Reflection | Proposals accepted | >60% |
 

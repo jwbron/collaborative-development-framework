@@ -315,9 +315,12 @@ This section embodies the guiding value of this entire pillar: rigor as a practi
 
 For complex changes, an LLM-powered planning framework ensures nothing is missed:
 
+> **Note on Phase Terminology:** CPF has two complementary phase sequences depending on context. This document describes the **implementation workflow** phases (ELICITATION → DESIGN → PLANNING → HANDOFF) for executing approved work. The [Foundational Technical Requirements](Foundational-Technical-Requirements.md) document uses the **strategic planning** phases (IDEATION → ASSESSMENT → REINFORCEMENT → PLANNING) for evaluating and shaping new initiatives. Both are part of CPF—one for *how* to build, the other for deciding *what* to build.
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│            Collaborative Planning Framework (CPF)                 │
+│         Collaborative Planning Framework (CPF)                  │
+│              Implementation Workflow Phases                     │
 │                                                                 │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  PHASE 1: ELICITATION                                    │   │
@@ -541,5 +544,7 @@ What matters is the rigor with which you apply it: clear roles, consistent hando
 
 ---
 
-**Last Updated:** 2025-12-05
-**Next Review:** 2026-01-05 (Monthly)
+**Last Updated:** 2025-12-06
+**Next Review:** 2026-01-06 (Monthly)
+
+Authored-by: jib
