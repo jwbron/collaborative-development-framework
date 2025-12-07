@@ -1,4 +1,4 @@
-# How to Not Code, Well
+# How to not code, well
 
 A pragmatic philosophy and framework for software engineering in the post-LLM era.
 
