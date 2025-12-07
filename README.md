@@ -1,4 +1,4 @@
-# Collaborative Development Framework
+# How to Not Code, Well
 
 A pragmatic philosophy and framework for software engineering in the post-LLM era.
 
