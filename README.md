@@ -46,9 +46,22 @@ The three pillars are mutually reinforcing:
 - Self-improvement enhances reviews
 - The collaboration model governs both
 
+## A Living Document
+
+**This repository is a living document.** It is expected to change and adapt significantly over time as we learn, experiment, and refine our understanding of human-LLM collaboration.
+
+**Nothing in this repository should be considered sacred.** The ideas, patterns, and recommendations here represent our current best thinking, not immutable truths. We encourage:
+
+- **Challenging assumptions** - If something doesn't work for your context, question it
+- **Proposing alternatives** - Better approaches are always welcome
+- **Adapting freely** - Take what works, modify what doesn't, ignore what's irrelevant
+- **Contributing back** - Share your learnings so others can benefit
+
+The field of LLM-assisted software development is evolving rapidly. What works today may be obsolete tomorrow, and what seems impractical now may become essential. This framework will evolve alongside that reality.
+
 ## Status
 
-**Draft** - This framework is under active development.
+**Active Development** - This framework is under active development and will continue to evolve.
 
 ## License
 
