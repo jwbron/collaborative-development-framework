@@ -24,9 +24,9 @@ Before diving into technical requirements, we establish the methodology for deve
 │         Collaborative Planning Framework (CPF)                  │
 │              Strategic Planning Phases                          │
 │                                                                 │
-│   IDEATION ──▶ ASSESSMENT ──▶ REINFORCEMENT ──▶ PLANNING       │
+│   IDEATION ──▶ ASSESSMENT ──▶ REINFORCEMENT ──▶ PLANNING        │
 │                                                                 │
-│   "What if..."  "Is this      "Let's sharpen   "Here's how     │
+│   "What if..."  "Is this      "Let's sharpen   "Here's how      │
 │                  valuable?"    this concept"    we build it"    │
 └─────────────────────────────────────────────────────────────────┘
 ```
