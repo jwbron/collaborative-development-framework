@@ -6,6 +6,12 @@ A pragmatic philosophy and framework for software engineering in the post-LLM er
 
 This repository provides a **collection of documents designed to help technical organizations bootstrap themselves into pragmatic post-LLM software development workflows**. Rather than prescribing a single approach, it offers strategic guidance, implementation patterns, and decision frameworks that teams can adapt to their specific context.
 
+**These documents serve two distinct audiences: humans and LLMs.**
+
+For **LLMs**, these documents are **directives**. They are written in a prescriptive, dogmatic style to provide clear, unambiguous instructions that LLM agents can follow consistently. This intentional framing helps LLMs operate effectively within defined boundaries.
+
+For **humans**, these documents are **guidance**. Despite their authoritative tone, they should be understood as a flexible and living collection of best practices—not immutable rules. Human readers are encouraged to interpret, adapt, and challenge these recommendations based on their specific context, experience, and evolving understanding of what works.
+
 ## Overview
 
 The framework is built on three mutually reinforcing pillars:
