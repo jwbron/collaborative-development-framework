@@ -205,21 +205,21 @@ The question isn't whether LLMs *can* assess these areas—they can. The questio
 Many review concerns fall into an overlap zone where both LLMs and humans can contribute:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    THE OVERLAP ZONE                             │
-│                                                                 │
-│  LLM Primary          │  Shared              │  Human Primary   │
-│  ────────────         │  ──────              │  ─────────────   │
-│  • Formatting         │  • Architecture      │  • Go/no-go      │
-│  • Types              │  • Security          │  • Org context   │
-│  • Patterns           │  • Business logic    │  • Novel strategy│
-│  • Documentation      │  • Design trade-offs │  • Accountability│
-│  • Common bugs        │  • Performance       │  • Team dynamics │
-│                       │                      │                  │
-│  LLM handles fully    │  LLM provides        │  Human provides  │
-│                       │  analysis; human     │  irreplaceable   │
-│                       │  decides priority    │  value           │
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│                    THE OVERLAP ZONE                              │
+│                                                                  │
+│  LLM Primary          │  Shared              │  Human Primary    │
+│  ────────────         │  ──────              │  ─────────────    │
+│  • Formatting         │  • Architecture      │  • Go/no-go       │
+│  • Types              │  • Security          │  • Org context    │
+│  • Patterns           │  • Business logic    │  • Novel strategy │
+│  • Documentation      │  • Design trade-offs │  • Accountability │
+│  • Common bugs        │  • Performance       │  • Team dynamics  │
+│                       │                      │                   │
+│  LLM handles fully    │  LLM provides        │  Human provides   │
+│                       │  analysis; human     │  irreplaceable    │
+│                       │  decides priority    │  value            │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 In the overlap zone, LLMs provide comprehensive analysis while humans decide what matters most for this specific change.
@@ -280,13 +280,13 @@ Different tools handle different concerns, but the stack is more nuanced than a 
 │  │  • Vulnerability patterns                                │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                           ▲                                    │
-│                           │ Security issues filtered          │
+│                           │ Security issues filtered           │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │  TYPE CHECKERS                                           │  │
 │  │  • Type safety (mypy, TypeScript)                        │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │                           ▲                                    │
-│                           │ Type errors filtered              │
+│                           │ Type errors filtered               │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │  LINTERS & FORMATTERS (Base of Stack)                    │  │
 │  └──────────────────────────────────────────────────────────┘  │
