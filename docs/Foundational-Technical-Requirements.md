@@ -370,8 +370,6 @@ Security cannot be an afterthought. Every foundation depends on security guarant
 - How do we minimize security overhead while maintaining protection?
 - How do we secure agent-to-agent communication in multi-agent scenarios?
 
-**Full details:** [Security Design for Autonomous Agents](Security-Design-for-Autonomous-Agents.md)
-
 ---
 
 ## High-Level Implementation Plan
@@ -533,7 +531,6 @@ Organizations should define specific targets based on their baseline measurement
 | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) | Pillar 1 |
 | [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) | Pillar 2 |
 | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) | Pillar 3 |
-| [Security Design for Autonomous Agents](Security-Design-for-Autonomous-Agents.md) | Foundation 7 |
 
 ---
 
