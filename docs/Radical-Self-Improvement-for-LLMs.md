@@ -29,6 +29,11 @@ This document presents **Radical Self-Improvement** as a design principle: LLM s
 3. **PR Review Reviewer** — Meta-review that turns human feedback into automated checks
 4. **Strategic Human Escalation** — Agent proposes, human validates
 
+**Two foundational practices underpin continuous improvement:**
+
+- **External Research Integration** — Actively incorporate learnings from academic literature, industry best practices, and prior art to inform improvement hypotheses
+- **Systematic Experimentation** — Use A/B testing and hypothesis-driven development to validate that changes actually improve outcomes
+
 ---
 
 ## Table of Contents
@@ -209,6 +214,23 @@ Self-reflection requires memory that persists across sessions. The agent should 
 - **Improvement proposals:** Hypotheses waiting for validation
 - **Metrics:** Token usage, rework rates, clarification requests
 - **Experiment results:** What worked, what didn't
+
+### External Research and A/B Testing
+
+Self-improvement shouldn't happen in a vacuum. A truly self-improving system:
+
+**Incorporates external research:**
+- Actively searches for academic literature and industry best practices relevant to detected patterns
+- Frames improvement proposals in the context of what's known to work elsewhere
+- Cites evidence when proposing changes, not just internal observations
+
+**Uses systematic experimentation:**
+- Frames improvements as testable hypotheses with predicted outcomes
+- Employs A/B testing where practical to compare approaches objectively
+- Measures actual outcomes against predictions to validate or refine hypotheses
+- Documents both successes and failures as learning for future improvement cycles
+
+This evidence-based approach prevents the system from cycling through changes without knowing if they help. It also produces valuable artifacts—documented experiments with outcomes—that inform future development and can be shared with the broader organization.
 
 ---
 

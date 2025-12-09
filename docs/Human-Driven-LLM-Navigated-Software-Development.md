@@ -16,7 +16,7 @@ This document articulates a new paradigm for software development: **human-drive
 
 **Humans excel at:** Creative problem-solving, strategic decision-making under uncertainty, interpersonal collaboration, intuitive judgment about what matters, and adapting to novel situations.
 
-**LLMs excel at:** Maintaining structural consistency across large codebases, exhaustive enumeration of edge cases, applying established patterns with unwavering precision, synthesizing large amounts of context, and tireless execution of well-defined tasks.
+**LLMs excel at:** Maintaining structural consistency across large codebases, exhaustive enumeration of edge cases, applying established patterns with unwavering precision, synthesizing large amounts of context, incorporating external research and best practices, and tireless execution of well-defined tasks.
 
 **The goal:** Free human cognitive capacity for creativity, strategic thinking, and healthy collaboration by offloading structural rigor and implementation details to LLMs. This isn't about replacing humans—it's about *amplifying* what makes humans uniquely valuable.
 
@@ -117,6 +117,19 @@ A core principle of this model is that **feedback flows both ways**: human feedb
 
 This bidirectional improvement creates a **virtuous cycle**: the more humans and LLMs work together, the better each becomes at their respective roles. The human becomes a better driver; the LLM becomes a better navigator. The partnership compounds over time.
 
+### Non-Attachment to Implementation
+
+A key part of rigorous human-driven development is **not being attached to a specific implementation** during a development cycle. This non-attachment enables:
+
+- **Rapid cycles of continuous improvement** — When you're not invested in defending a particular approach, you can iterate quickly based on evidence
+- **Evidence-based decision making** — Let data, not ego, determine which approach works best
+- **Systematic A/B testing** — Compare implementations objectively rather than arguing about preferences
+- **Hypothesis-driven development** — Frame changes as experiments with measurable outcomes
+
+The driver/navigator model supports this: humans drive the *strategic intent*, not the *specific implementation*. When LLMs handle implementation details, humans naturally develop healthier distance from any particular solution—freeing them to evaluate approaches based on outcomes rather than authorship.
+
+This also connects to external research: a team that actively incorporates lessons from academic literature, industry best practices, and prior art is inherently less attached to "not invented here" solutions. The LLM navigator can surface relevant research, but the human driver decides what evidence matters.
+
 ---
 
 ## Division of Cognitive Labor
@@ -140,6 +153,7 @@ This bidirectional improvement creates a **virtuous cycle**: the more humans and
 | **Precision** | Get details exactly right | No typos, no oversights, no "I'll fix it later" |
 | **Documentation** | Keep everything current | No resistance to "boring" work |
 | **Validation** | Verify against standards | Instant access to reference materials |
+| **Research** | Incorporate external research and best practices | Synthesize large volumes of literature and prior art |
 | **Implementation** | Execute well-defined tasks | Efficient translation of spec to code |
 
 ### The Handoff Points

@@ -273,7 +273,14 @@ Static systems cannot keep pace. The system should get better over time:
 - LLM feedback improves human behavior
 - Documentation evolves with the code
 
-### 5. Transparency and Observability
+### 5. Ground Decisions in Evidence
+
+All three pillars benefit from active incorporation of external research and systematic experimentation:
+- **External research** informs decisions across review practices, collaboration models, and self-improvement strategies
+- **A/B testing and hypothesis-driven development** validate that changes actually improve outcomes rather than just feeling right
+- Evidence-based practice prevents both humans and systems from cycling through changes without knowing if they help
+
+### 6. Transparency and Observability
 
 All automated actions should be:
 - Visible (humans can see what's happening)
