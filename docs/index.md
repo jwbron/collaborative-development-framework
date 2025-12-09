@@ -23,15 +23,15 @@
 
 ### Technical Specifications
 
-| Foundation | Location | Status |
-|------------|----------|--------|
-| Documentation Intelligence | `specs/documentation-intelligence.md` | To Be Created |
-| Collaborative Planning | [specs/collaborative-planning-framework.md](../specs/collaborative-planning-framework.md) | First Draft |
-| Multi-Agent Framework | `specs/multi-agent-framework.md` | To Be Created |
-| PR Reviewer System | `specs/pr-reviewer-system.md` | To Be Created |
-| Codebase Analysis Engine | `specs/codebase-analysis.md` | To Be Created |
-| Continual Self-Reflection | `specs/continual-self-reflection.md` | To Be Created |
-| Security Architecture | `specs/security-architecture.md` | To Be Created |
+| Foundation | Status | Location |
+|------------|--------|----------|
+| Documentation Intelligence | **Draft** | [foundations/Documentation-Intelligence.md](foundations/Documentation-Intelligence.md) |
+| Collaborative Planning | **Draft** | [foundations/Collaborative-Planning-Framework.md](foundations/Collaborative-Planning-Framework.md) |
+| Multi-Agent Framework | **Draft** | [foundations/Multi-Agent-Framework.md](foundations/Multi-Agent-Framework.md) |
+| PR Reviewer System | **Draft** | [foundations/PR-Reviewer-System.md](foundations/PR-Reviewer-System.md) |
+| Codebase Analysis Engine | **Draft** | [foundations/Codebase-Analysis-Engine.md](foundations/Codebase-Analysis-Engine.md) |
+| Continual Self-Reflection | **Draft** | [foundations/Continual-Self-Reflection.md](foundations/Continual-Self-Reflection.md) |
+| Security Architecture | **Draft** | [foundations/Security-Design-for-Autonomous-Agents.md](foundations/Security-Design-for-Autonomous-Agents.md) |
 
 ## By Topic
 
