@@ -44,7 +44,7 @@ This document is the first artifact built using CPF:
 
 - **Ideation**: The vision for Post-LLM SE emerged from observing LLM development patterns
 - **Assessment**: We determined this vision is both valuable and achievable
-- **Reinforcement**: This document sharpens the concept into six technical foundations
+- **Reinforcement**: This document sharpens the concept into seven technical foundations
 - **Planning**: The high-level plan below will guide implementation
 
 **Once this document is approved**, detailed design documents for each foundation will follow the same CPF process.
@@ -66,13 +66,13 @@ This document is the first artifact built using CPF:
 
 ---
 
-## Strategic Overview: The Six Foundations
+## Strategic Overview: The Seven Foundations
 
-The Post-LLM SE vision requires six foundational capabilities:
+The Post-LLM SE vision requires seven foundational capabilities:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                    The Six Foundations                              │
+│                    The Seven Foundations                            │
 │                                                                     │
 │  ┌───────────────────────────────────────────────────────────────┐  │
 │  │              FOUNDATIONAL LAYER (Build First)                 │  │
@@ -96,6 +96,12 @@ The Post-LLM SE vision requires six foundational capabilities:
 │  │ REVIEWER   │  │ ANALYSIS   │  │ REFLECTION │                     │
 │  │ System     │  │ Engine     │  │ Framework  │                     │
 │  └────────────┘  └────────────┘  └────────────┘                     │
+│                                                                     │
+│  ┌───────────────────────────────────────────────────────────────┐  │
+│  │           7. SECURITY ARCHITECTURE                            │  │
+│  │              Cross-cutting concern enabling safe autonomy     │  │
+│  │              Sandboxing | Permissions | Ephemerality | Audit  │  │
+│  └───────────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -110,6 +116,7 @@ The Post-LLM SE vision requires six foundational capabilities:
 | **PR Reviewer System** | Automated specialized code review | Pillar 1 |
 | **Codebase Analysis Engine** | Deep code understanding | All capabilities |
 | **Continual Self-Reflection** | Autonomous system improvement | Pillar 3 |
+| **Security Architecture** | Safe autonomous agent operation | All capabilities (cross-cutting) |
 
 ---
 
@@ -318,6 +325,55 @@ In the CPF model, **documentation drives development**, not the reverse:
 
 ---
 
+## Foundation 7: Security Architecture
+
+**Purpose:** Provide the architectural foundations for secure autonomous agent operation.
+
+**Strategic Intent:** Enable LLM agents to operate with meaningful autonomy while maintaining security guarantees that don't depend on the agent's cooperation. Security must be enforced by design, not by instruction.
+
+> **Core Principle:** Safety by design, not by instruction. Security constraints must be architectural—enforced by the system itself—not merely instructed in prompts that can be bypassed.
+
+### Why Security Architecture is Cross-Cutting
+
+Security cannot be an afterthought. Every foundation depends on security guarantees:
+- Documentation Intelligence must protect sensitive information
+- CPF must ensure human oversight points cannot be bypassed
+- Multi-Agent Framework must isolate agents and control their capabilities
+- PR Reviewer must have secure access to code without exposure risks
+- Codebase Analysis must handle code without executing untrusted content
+- Self-Reflection must not be manipulable by adversarial input
+
+### Key Capabilities
+
+| Capability | What It Does | Why It Matters |
+|------------|--------------|----------------|
+| **Sandboxing** | Isolates agent execution environments | Limits blast radius of any compromise |
+| **Permission System** | Fine-grained, time-limited access control | Enforces least privilege |
+| **Ephemeral Execution** | Stateless, disposable environments | Prevents persistent compromise |
+| **Data Protection** | Prevents unauthorized data access/exfiltration | Protects sensitive information |
+| **Secret Management** | Secure credential handling | Prevents credential exposure |
+| **Audit System** | Comprehensive logging and monitoring | Enables detection and forensics |
+| **Human Oversight** | Integration points for human review | Maintains accountability |
+
+### Core Security Principles
+
+1. **Defense in Depth**: Multiple independent safeguards for every security-critical operation
+2. **Least Privilege**: Minimum permissions necessary, scoped, time-bound, revocable
+3. **Assume Compromise**: Design to limit blast radius and enable recovery
+4. **Explicit Over Implicit**: Architectural enforcement, not prompt instructions
+5. **Reversibility**: Prefer soft deletes, backups, and human approval for irreversible actions
+
+### Open Questions
+
+- How do we stay ahead of container escape vulnerabilities?
+- What novel attack vectors are unique to LLM agents?
+- How do we minimize security overhead while maintaining protection?
+- How do we secure agent-to-agent communication in multi-agent scenarios?
+
+**Full details:** [Security Design for Autonomous Agents](Security-Design-for-Autonomous-Agents.md)
+
+---
+
 ## High-Level Implementation Plan
 
 > **Principle:** Each phase produces working documents AND working code. Documents evolve alongside implementation.
@@ -354,7 +410,7 @@ Phase 6: Self-Reflection
 **Exit Criteria:**
 - Human approval of strategic direction
 - Clear methodology (CPF) established
-- Six foundations defined at appropriate level of abstraction
+- Seven foundations defined at appropriate level of abstraction
 
 ### Phase 1: Documentation Intelligence
 
@@ -443,6 +499,7 @@ Detailed planning for subsequent phases will follow CPF:
 | PR Review | Issues caught pre-human | Majority |
 | Codebase Analysis | Query accuracy | High |
 | Self-Reflection | Proposals accepted | Majority |
+| Security Architecture | Security incidents | Zero critical |
 
 Organizations should define specific targets based on their baseline measurements and context.
 
@@ -476,6 +533,7 @@ Organizations should define specific targets based on their baseline measurement
 | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) | Pillar 1 |
 | [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) | Pillar 2 |
 | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) | Pillar 3 |
+| [Security Design for Autonomous Agents](Security-Design-for-Autonomous-Agents.md) | Foundation 7 |
 
 ---
 

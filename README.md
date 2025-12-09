@@ -29,19 +29,20 @@ Software engineering practices must evolve to leverage LLM strengths (exhaustive
 ## Key Documents
 
 - **[Pragmatic Guide](docs/Pragmatic-Guide-Software-Engineering-Post-LLM-World.md)** - Strategic umbrella connecting all three pillars
-- **[Foundational Technical Requirements](docs/Foundational-Technical-Requirements.md)** - The six technical foundations for implementation
+- **[Foundational Technical Requirements](docs/Foundational-Technical-Requirements.md)** - The seven technical foundations for implementation
 - **[LLM-First Code Reviews](docs/LLM-Assisted-Code-Review.md)** - Pillar 1: Intentionality in review
 - **[Human-Driven Development](docs/Human-Driven-LLM-Navigated-Software-Development.md)** - Pillar 2: Rigor in collaboration
 - **[Radical Self-Improvement](docs/Radical-Self-Improvement-for-LLMs.md)** - Pillar 3: Care in continuous improvement
 
-## The Six Technical Foundations
+## The Seven Technical Foundations
 
-1. **Multi-Agent Framework** - Infrastructure for coordinating specialized LLM agents
+1. **Documentation Intelligence** - Always-current, navigable documentation
 2. **Collaborative Planning Framework** - Structured human-LLM collaboration
-3. **PR Reviewer System** - Automated review with specialized agents
-4. **Codebase Analysis Engine** - Deep code understanding
-5. **Index-Based Documentation Strategy** - Always-current documentation
+3. **Multi-Agent Framework** - Infrastructure for coordinating specialized LLM agents
+4. **PR Reviewer System** - Automated review with specialized agents
+5. **Codebase Analysis Engine** - Deep code understanding
 6. **Continual Self-Reflection Framework** - Autonomous system improvement
+7. **Security Architecture** - Safe autonomous agent operation through sandboxing, permissions, and audit
 
 ## Philosophy
 
