@@ -21,17 +21,17 @@
 | [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) | Rigor |
 | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) | Care |
 
-### Technical Specifications (To Be Created)
+### Technical Specifications
 
-| Foundation | Location |
-|------------|----------|
-| Documentation Intelligence | `specs/documentation-intelligence.md` |
-| Collaborative Planning | `specs/collaborative-planning.md` |
-| Multi-Agent Framework | `specs/multi-agent-framework.md` |
-| PR Reviewer System | `specs/pr-reviewer-system.md` |
-| Codebase Analysis Engine | `specs/codebase-analysis.md` |
-| Continual Self-Reflection | `specs/continual-self-reflection.md` |
-| Security Architecture | `specs/security-architecture.md` |
+| Foundation | Location | Status |
+|------------|----------|--------|
+| Documentation Intelligence | `specs/documentation-intelligence.md` | To Be Created |
+| Collaborative Planning | [specs/collaborative-planning-framework.md](../specs/collaborative-planning-framework.md) | First Draft |
+| Multi-Agent Framework | `specs/multi-agent-framework.md` | To Be Created |
+| PR Reviewer System | `specs/pr-reviewer-system.md` | To Be Created |
+| Codebase Analysis Engine | `specs/codebase-analysis.md` | To Be Created |
+| Continual Self-Reflection | `specs/continual-self-reflection.md` | To Be Created |
+| Security Architecture | `specs/security-architecture.md` | To Be Created |
 
 ## By Topic
 
