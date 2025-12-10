@@ -4,29 +4,42 @@
 
 ## Context
 
-You are helping bootstrap infrastructure for human/LLM collaboration tooling. This repository contains first-draft philosophy and framework definitions - your role is to help build it out.
+You are helping bootstrap infrastructure for human/LLM collaboration tooling. This repository contains philosophy documents (the three pillars) and technical specifications for seven foundations.
 
-**Current priority**: Writing technical specifications for the seven foundations defined in [Foundational-Technical-Requirements.md](docs/Foundational-Technical-Requirements.md).
+**Current phase**: Spec review and implementation planning. All seven foundation specs exist as drafts. The next step is to stabilize these specs and begin Phase 1 implementation (Documentation Intelligence).
+
+## Current Priorities
+
+| Priority | Task | Details |
+|----------|------|---------|
+| 1 | **Spec Review** | Review foundation specs for consistency, resolve open questions, move from Draft to Stable |
+| 2 | **Phase 1 Planning** | Use CPF to plan Documentation Intelligence implementation |
+| 3 | **Open Questions** | Address strategic questions in [Foundational-Technical-Requirements.md](docs/Foundational-Technical-Requirements.md) |
 
 ## Directives
 
 ### Before You Start
 
 1. Read [README.md](README.md) to understand the three pillars and core thesis
-2. Read [docs/Foundational-Technical-Requirements.md](docs/Foundational-Technical-Requirements.md) to understand what needs to be built
+2. Read [docs/Foundational-Technical-Requirements.md](docs/Foundational-Technical-Requirements.md) for the seven foundations and implementation phases
 3. Check [docs/index.md](docs/index.md) to find specific documents
+4. Review relevant foundation specs in [docs/foundations/](docs/foundations/)
 
 ### How to Contribute
 
-**Write specs, not implementations.** This repo defines what to build, not the code itself.
+**This repo defines what to build, not the code itself.**
 
-Each specification should:
-- Define clear requirements without over-specifying implementation
-- Reference relevant philosophy from the pillar documents
-- Identify dependencies between foundations
-- Include enough detail for an implementer to formulate a detailed plan
+Current contribution modes:
+
+| Mode | When | Output |
+|------|------|--------|
+| **Spec refinement** | Improving existing foundation specs | Targeted edits with rationale |
+| **Consistency review** | Checking cross-references between specs | Issues or fixes |
+| **Open question resolution** | Addressing questions listed in specs | Proposed answers with reasoning |
+| **Implementation planning** | Preparing for Phase 1 | CPF-style planning documents |
 
 **PR standards:**
+
 - One logical change per PR
 - Explain why, not just what
 - Reference related documents

@@ -12,6 +12,14 @@ For **LLMs**, these documents are **directives**. They are written in a prescrip
 
 For **humans**, these documents are **guidance**. Despite their authoritative tone, they should be understood as a flexible and living collection of best practices—not immutable rules. Human readers are encouraged to interpret, adapt, and challenge these recommendations based on their specific context, experience, and evolving understanding of what works.
 
+## What This Is Not
+
+This repository is **not an implementation**. It contains no code and does not prescribe how to build your tooling. Instead, it is both a guide and an exercise.
+
+The specifications here have intentional gaps. These gaps are meant to be filled in by you, using the frameworks established in this repository, to fit your existing workflows or to create new ones. The process of resolving these gaps—applying the Collaborative Planning Framework to your own context, making decisions about open questions, adapting patterns to your stack—is where the real value emerges.
+
+If you're looking for a turnkey solution, this isn't it. If you're looking for a structured way to think about human-LLM collaboration that you can adapt to your needs, read on.
+
 ## Overview
 
 The framework is built on three mutually reinforcing pillars:
