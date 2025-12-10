@@ -363,7 +363,7 @@ Even self-improving systems need:
 
 - [AWS AI-Driven Development Life Cycle](https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/)
 - [Atlassian HULA Framework](https://www.atlassian.com/blog/atlassian-engineering/hula-blog-autodev-paper-human-in-the-loop-software-development-agents)
-- [Anthropic Claude Best Practices](https://docs.anthropic.com/claude/docs/claude-for-work)
+- [Anthropic Claude Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 ---
 
