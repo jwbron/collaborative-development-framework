@@ -25,7 +25,7 @@ An LLM agent practicing continual self-reflection operates a persistent feedback
     ┌─────────────────────────────────────────────────────────────┐
     │                                                             │
     │         ┌───────────┐                                       │
-    │         │  OBSERVE  │◀──────────────────────────────────┐   │
+    │         │  OBSERVE  │◀─────────────────────────────────┐   │
     │         └─────┬─────┘                                   │   │
     │               │                                         │   │
     │               ▼                                         │   │
@@ -35,7 +35,7 @@ An LLM agent practicing continual self-reflection operates a persistent feedback
     │               │                                         │   │
     │               ▼                                         │   │
     │         ┌───────────┐         ┌───────────┐             │   │
-    │         │  PROPOSE  │────────▶│  VALIDATE │─────────────┘   │
+    │         │  PROPOSE  │───────▶│  VALIDATE │─────────────┘   │
     │         └───────────┘         └───────────┘                 │
     │                                     │                       │
     │                                     ▼                       │
@@ -171,19 +171,19 @@ Self-reflection proposes; humans validate. This is a design constraint, not a li
     Agent                                          Human
     ─────                                          ─────
       │                                              │
-      │  "I detected pattern X. Proposed fix Y."    │
-      │─────────────────────────────────────────────▶│
+      │   "I detected pattern X. Proposed fix Y."    │
+      │────────────────────────────────────────────▶│
       │                                              │
       │                                              │ Review
       │                                              │ proposal
       │                                              │
       │  Approve / Modify / Reject / Defer           │
-      │◀─────────────────────────────────────────────│
+      │◀────────────────────────────────────────────│
       │                                              │
       │  Implement (if approved)                     │
       │                                              │
       │  Report outcome                              │
-      │─────────────────────────────────────────────▶│
+      │────────────────────────────────────────────▶│
       │                                              │
 ```
 

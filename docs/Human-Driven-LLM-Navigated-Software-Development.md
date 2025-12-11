@@ -164,14 +164,14 @@ This also connects to external research: a team that actively incorporates lesso
           │  "I want to add OAuth2 to        │
           │   the API for third-party        │
           │   integrations"                  │
-          │─────────────────────────────────▶│
+          │────────────────────────────────▶│
           │                                  │
           │                                  │ • Research OAuth2 best practices
           │                                  │ • Enumerate security considerations
           │                                  │ • Identify affected components
           │                                  │ • Draft implementation plan
           │                                  │
-          │◀─────────────────────────────────│
+          │◀────────────────────────────────│
           │  "Here are 3 approaches with     │
           │   trade-offs. Approach A is      │
           │   simplest but limits future     │
@@ -184,14 +184,14 @@ This also connects to external research: a team that actively incorporates lesso
           │  "Let's go with Approach B,      │
           │   but use PKCE instead of        │
           │   client secrets"                │
-          │─────────────────────────────────▶│
+          │────────────────────────────────▶│
           │                                  │
           │                                  │ • Implement Approach B with PKCE
           │                                  │ • Write comprehensive tests
           │                                  │ • Update documentation
           │                                  │ • Ensure consistency with codebase
           │                                  │
-          │◀─────────────────────────────────│
+          │◀────────────────────────────────│
           │  [PR ready for human review]     │
           │                                  │
           ▼                                  ▼

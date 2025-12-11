@@ -235,7 +235,7 @@ Every agent execution occurs within an isolated container:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    CONTAINER BOUNDARY                    │
+│                    CONTAINER BOUNDARY                   │
 │                                                         │
 │  Agent Workspace:                                       │
 │  • Cloned repository (read/write)                       │
@@ -376,7 +376,7 @@ Clean Extraction
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                 EXFILTRATION PREVENTION                      │
+│                 EXFILTRATION PREVENTION                     │
 │                                                             │
 │  INPUT FILTERING                                            │
 │  • Scan ingested content for secrets                        │

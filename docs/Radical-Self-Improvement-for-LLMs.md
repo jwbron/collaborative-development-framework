@@ -132,7 +132,7 @@ The first level of self-improvement: **automated housekeeping**. The agent shoul
 │                  Automated Maintenance Loop                      │
 │                                                                  │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐        │
-│  │   Weekly     │───▶│   Analyze    │───▶│   Generate   │        │
+│  │   Weekly     │──▶│   Analyze    │──▶│   Generate   │        │
 │  │   Trigger    │    │   Current    │    │   Fix PRs    │        │
 │  │              │    │   State      │    │              │        │
 │  └──────────────┘    └──────────────┘    └──────────────┘        │
