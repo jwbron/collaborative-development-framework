@@ -129,7 +129,7 @@ Each language provides an adapter that maps language-specific syntax to universa
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                    Universal Analysis Model                  │
-│  (Functions, Classes, Types, Imports, Calls, etc.)          │
+│   (Functions, Classes, Types, Imports, Calls, etc.)          │
 └──────────────────────────────────────────────────────────────┘
                               ▲
            ┌──────────────────┼──────────────────┐

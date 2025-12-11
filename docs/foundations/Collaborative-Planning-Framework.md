@@ -265,9 +265,9 @@ Before making a decision, explore the solution space systematically.
 │                                         │
 │              [Problem]                  │
 │             /    |    \                 │
-│      [Option A][Option B][Option C]    │
+│      [Option A][Option B][Option C]     │
 │        /  \       |       \             │
-│   [Trade-off analysis per option]      │
+│   [Trade-off analysis per option]       │
 │                                         │
 │   Present options with trade-offs       │
 │   Human selects preferred path          │

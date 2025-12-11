@@ -78,6 +78,10 @@ The field of LLM-assisted software development is evolving rapidly. What works t
 
 **Active Development** - This framework is under active development and will continue to evolve.
 
+**Foundation Complete** - The core philosophy and framework definitions have reached their intended scope. Iteration on existing content will continue, but the foundations are established.
+
+**Fork and Build** - Organizations and individuals should fork this repository, then continue building it out for their specific context. The foundations are designed to be adapted, extended, and challenged as you discover what works for your team.
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.

@@ -131,26 +131,26 @@ A single entry point (often called an index, manifest, or navigation file) that 
 ┌─────────────────────────────────────────────────────────────┐
 │                    NAVIGATION HUB                           │
 │                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
-│  │   Mission   │  │ Quick Start │  │  Structure  │         │
-│  │   & Vision  │  │    Guide    │  │   Overview  │         │
-│  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘         │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐          │
+│  │   Mission   │  │ Quick Start │  │  Structure  │          │
+│  │   & Vision  │  │    Guide    │  │   Overview  │          │
+│  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘          │
 │         │                │                │                 │
 │         └────────────────┼────────────────┘                 │
 │                          ▼                                  │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              CATEGORY INDEXES                        │   │
-│  │                                                      │   │
-│  │  Standards    Guides    Components    Operations    │   │
-│  │  & Patterns   & How-To  & APIs        & Runbooks    │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │              CATEGORY INDEXES                       │    │
+│  │                                                     │    │
+│  │  Standards    Guides    Components    Operations    │    │
+│  │  & Patterns   & How-To  & APIs        & Runbooks    │    │
+│  └─────────────────────────────────────────────────────┘    │
 │                          │                                  │
 │                          ▼                                  │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              DETAILED CONTENT                        │   │
-│  │                                                      │   │
-│  │  Individual documents, code files, API specs, etc.  │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │              DETAILED CONTENT                       │    │
+│  │                                                     │    │
+│  │  Individual documents, code files, API specs, etc.  │    │
+│  └─────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────┘
 ```
 

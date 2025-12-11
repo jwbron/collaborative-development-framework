@@ -331,13 +331,13 @@ PR Event (opened, updated, review requested)
 Each domain analyzer receives the review context and produces domain-specific findings. Analyzers can run in parallel.
 
 ```
-    Review Context
-           │
-     ┌─────┼─────┬──────┬──────┬──────┬──────┐
-     ▼     ▼     ▼      ▼      ▼      ▼      ▼
+      Review Context
+             │
+     ┌───────┼───────┬───────┬──────┬──────┬──────┐
+     ▼       ▼       ▼       ▼      ▼      ▼      ▼
   Security  Arch  Correct Testing  Docs  Style  Perf
-     │      │       │       │       │      │      │
-     └──────┴───────┴───────┴───────┴──────┴──────┘
+     │       │       │       │      │      │      │
+     └───────┴───────┴───────┴──────┴──────┴──────┘
                           │
                           ▼
                   Domain Findings

@@ -179,7 +179,7 @@ The three pillars are not independent options or sequential phases—they are mu
          │                         │                       │
          ▼                         ▼                       ▼
 ┌─────────────────┐     ┌─────────────────┐     ┌────────────────────┐
-│   PILLAR 1      │◀───▶│   PILLAR 2      │◀───▶│   PILLAR 3         │
+│   PILLAR 1      │◀─▶│   PILLAR 2      │◀─▶│   PILLAR 3         │
 │   LLM-First     │     │   Human-Driven  │     │   Radical          │
 │   Code Reviews  │     │   LLM-Navigated │     │   Self-Improvement │
 │                 │     │                 │     │                    │
