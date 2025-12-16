@@ -67,8 +67,6 @@ This isn't about hierarchy—both roles are essential. It's about **different co
 | **Captain (Human)** | Sets destination and priorities, makes command decisions, bears ultimate responsibility | Creative, strategic, social, accountable |
 | **Navigator (LLM)** | Charts course, tracks position, monitors conditions, identifies hazards | Systematic, exhaustive, precise, tireless |
 
-**Why this metaphor works:** Just as a captain needs a navigator to handle the cognitive burden of tracking details and charting paths, humans need LLMs to handle the structural rigor of implementation. And just as navigation is pointless without a destination, LLM execution is meaningless without human strategic direction.
-
 This is rigor in action: defining roles precisely based on who's suited for what, and maintaining the discipline to stay in your lane.
 
 ### The Problem with Traditional Development
