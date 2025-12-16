@@ -280,7 +280,7 @@ You don't adopt these pillars sequentially—you adopt them together as aspects 
 
 **Important:** While organizations benefit from shared infrastructure, embrace flexibility in how developers work with LLMs:
 - Some developers may prefer headless workflows managed through Slack and GitHub
-- Others may prefer CLI tools like Claude Code or beads
+- Others may prefer CLI tools like Claude Code
 - Still others may prefer IDE integrations like Cursor or Copilot
 - The shared infrastructure (review systems, documentation, security) should enable all these approaches rather than mandating a single tool
 
