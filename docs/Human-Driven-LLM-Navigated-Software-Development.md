@@ -20,7 +20,7 @@ This document articulates a new paradigm for software development: **human-drive
 
 **The goal:** Free human cognitive capacity for creativity, strategic thinking, and healthy collaboration by offloading structural rigor and implementation details to LLMs. This isn't about replacing humans—it's about *amplifying* what makes humans uniquely valuable.
 
-**The guiding value—rigor:** Establish precise roles and maintain them consistently. The driver/navigator metaphor isn't just a suggestion—it's a discipline that prevents the chaos of undefined collaboration. When roles are clear and consistently maintained, both humans and LLMs can operate with confidence.
+**The guiding value—rigor:** Establish precise roles and maintain them consistently. The captain/navigator metaphor isn't just a suggestion—it's a discipline that prevents the chaos of undefined collaboration. When roles are clear and consistently maintained, both humans and LLMs can operate with confidence.
 
 ---
 
@@ -31,7 +31,8 @@ This document articulates a new paradigm for software development: **human-drive
 - [The Workflow in Practice](#the-workflow-in-practice)
 - [Benefits for Humans](#benefits-for-humans)
 - [Benefits for Teams](#benefits-for-teams)
-- [Rigor Through Interactive Planning](#rigor-through-interactive-planning)
+- [Rigor Through Collaborative Planning](#rigor-through-collaborative-planning)
+- [Workflow Flexibility: Supporting All Working Styles](#workflow-flexibility-supporting-all-working-styles)
 - [Implementation Patterns](#implementation-patterns)
 - [Anti-Patterns to Avoid](#anti-patterns-to-avoid)
 - [Success Criteria](#success-criteria)
@@ -41,20 +42,32 @@ This document articulates a new paradigm for software development: **human-drive
 
 ## The Core Philosophy
 
-### Driving vs. Navigating
+### Captain and Navigator: Complementary Roles
 
-Consider the analogy of a road trip:
+Consider the analogy of a ship's voyage. **Navigation is meaningless without a destination.**
+
+A navigator can chart the optimal course, track position, monitor weather, and identify hazards. But none of that matters if you don't know where you're going. The navigator cannot decide *where* to go—only *how* to get there once the destination is set.
+
+**The captain's essential role:**
+- **Sets the destination** — Where are we going? Why this destination and not another?
+- **Establishes priorities** — Should we prioritize speed, safety, or fuel efficiency?
+- **Makes command decisions** — When to change course, when to wait out a storm, when the plan needs adjustment
+- **Bears ultimate responsibility** — Accountable for the success of the voyage
+
+**The navigator's essential role:**
+- **Tracks position** — Where are we right now?
+- **Charts the course** — What's the optimal path given current conditions?
+- **Monitors continuously** — Weather, hazards, fuel, crew status
+- **Provides critical information** — Data the captain needs to make decisions
+
+This isn't about hierarchy—both roles are essential. It's about **different cognitive capabilities serving different purposes**:
 
 | Role | Responsibility | Cognitive Load |
 |------|----------------|----------------|
-| **Driver (Human)** | Decides where to go, when to stop, what route to take | Creative, strategic, social |
-| **Navigator (LLM)** | Tracks current position, calculates optimal paths, monitors for hazards | Systematic, exhaustive, precise |
+| **Captain (Human)** | Sets destination and priorities, makes command decisions, bears ultimate responsibility | Creative, strategic, social, accountable |
+| **Navigator (LLM)** | Charts course, tracks position, monitors conditions, identifies hazards | Systematic, exhaustive, precise, tireless |
 
-The driver makes the decisions that matter—the destination, the purpose of the journey, whether to take the scenic route. The navigator handles the cognitive burden of tracking every detail, ensuring nothing is missed, and providing accurate information for decision-making.
-
-Neither role is subordinate to the other. Both are essential. But they require fundamentally different cognitive capabilities.
-
-This is rigor in action: defining roles precisely, and maintaining the discipline to stay in your lane.
+This is rigor in action: defining roles precisely based on who's suited for what, and maintaining the discipline to stay in your lane.
 
 ### The Problem with Traditional Development
 
@@ -84,8 +97,8 @@ A significant portion of cognitive effort goes toward ensuring correctness, cons
 ┌────────────────────────────────────────────────────────────────┐
 │                    COGNITIVE LOAD REDISTRIBUTION               │
 │                                                                │
-│     HUMAN (Driver)         │      LLM (Navigator)              │
-│     ──────────────         │      ─────────────────            │
+│     HUMAN (Captain)        │      LLM (Navigator)              │
+│     ───────────────        │      ─────────────────            │
 │  • What should we build?   │  • Enumerate all edge cases       │
 │  • Why does this matter?   │  • Ensure pattern consistency     │
 │  • How does this fit?      │  • Update all call sites          │
@@ -115,7 +128,7 @@ A core principle of this model is that **feedback flows both ways**: human feedb
 - Questions during elicitation sharpen human thinking about requirements
 - Comprehensive analysis reveals blind spots in human reasoning
 
-This bidirectional improvement creates a **virtuous cycle**: the more humans and LLMs work together, the better each becomes at their respective roles. The human becomes a better driver; the LLM becomes a better navigator. The partnership compounds over time.
+This bidirectional improvement creates a **virtuous cycle**: the more humans and LLMs work together, the better each becomes at their respective roles. The human becomes a better captain; the LLM becomes a better navigator. The partnership compounds over time.
 
 ### Non-Attachment to Implementation
 
@@ -126,9 +139,9 @@ A key part of rigorous human-driven development is **not being attached to a spe
 - **Systematic A/B testing** — Compare implementations objectively rather than arguing about preferences
 - **Hypothesis-driven development** — Frame changes as experiments with measurable outcomes
 
-The driver/navigator model supports this: humans drive the *strategic intent*, not the *specific implementation*. When LLMs handle implementation details, humans naturally develop healthier distance from any particular solution—freeing them to evaluate approaches based on outcomes rather than authorship.
+The captain/navigator model supports this: humans set the *strategic intent*, not the *specific implementation*. When LLMs handle implementation details, humans naturally develop healthier distance from any particular solution—freeing them to evaluate approaches based on outcomes rather than authorship.
 
-This also connects to external research: a team that actively incorporates lessons from academic literature, industry best practices, and prior art is inherently less attached to "not invented here" solutions. The LLM navigator can surface relevant research, but the human driver decides what evidence matters.
+This also connects to external research: a team that actively incorporates lessons from academic literature, industry best practices, and prior art is inherently less attached to "not invented here" solutions. The LLM navigator can surface relevant research, but the human captain decides what evidence matters.
 
 ---
 
@@ -209,7 +222,7 @@ The human expresses what they want to accomplish, not necessarily how:
 "I want to add granular permission scopes to our API so partners can request only the access they need"
 ```
 
-This is *driving*: the human decides the destination based on business needs.
+This is *captaining*: the human sets the destination based on business needs.
 
 ### Phase 2: LLM Navigates the Solution Space
 
@@ -231,7 +244,7 @@ The LLM presents options with trade-offs. The human decides:
 - "We'll accept some increased verbosity to support fine-grained permissions"
 - "Let's prioritize clarity over backward compatibility"
 
-This is *driving*: the human makes the judgment calls.
+This is *captaining*: the human makes the command decisions.
 
 ### Phase 4: LLM Executes with Precision
 
@@ -252,7 +265,7 @@ The human reviews the implementation with fresh eyes:
 - Are there any concerns I didn't anticipate?
 - Is this something I'm comfortable deploying?
 
-This is *driving*: the human has final authority.
+This is *captaining*: the human has final authority.
 
 ---
 
@@ -401,6 +414,123 @@ Each project that goes through this framework:
 ### Making Implicit Knowledge Explicit
 
 Engineering organizations often rely on implicit knowledge—"everyone knows we don't do it that way." The Collaborative Planning Framework surfaces these assumptions by requiring explicit specification during the Elicitation phase, which then becomes available to all team members and future LLM interactions.
+
+---
+
+## Workflow Flexibility: Supporting All Working Styles
+
+The human-driven, LLM-navigated model supports **multiple working styles**—from heavy up-front planning to iterative experimentation. The captain/navigator roles remain consistent, but how you move through the work can vary based on the task, your preferences, and what you learn along the way.
+
+### The Full-Planning Approach
+
+Some developers and some tasks benefit from comprehensive planning before implementation:
+
+```
+Human: "I want to add OAuth2 support for third-party integrations"
+   ↓
+[Full CPF cycle: ELICITATION → DESIGN → PLANNING → HANDOFF]
+   ↓
+Human reviews and approves complete plan
+   ↓
+LLM executes with full context
+   ↓
+Implementation proceeds systematically
+```
+
+**When this works well:**
+- Complex features with many dependencies
+- High-risk changes requiring careful analysis
+- Novel problems where you need to explore the solution space
+- Team projects requiring coordination
+- Learning: when you want to understand the full scope before diving in
+
+**The value:** Comprehensive up-front thinking reduces surprises, ensures alignment, and creates documentation as a byproduct.
+
+### The Iterative-Experimental Approach
+
+Other developers and tasks benefit from rapid prototyping and learning by doing:
+
+```
+Human: "Let me try adding OAuth2—start with a basic implementation"
+   ↓
+[Quick implementation, light planning]
+   ↓
+Human: "Okay, this works but feels clunky. Let's refine the API"
+   ↓
+[Iterate on the design]
+   ↓
+Human: "Now let's properly specify what we learned and clean it up"
+   ↓
+[Formalize and document]
+```
+
+**When this works well:**
+- Exploratory work where you don't know what's best until you try it
+- Quick prototypes or proof-of-concepts
+- Refactoring where you need to feel the code to understand it
+- UI/UX work where you need to see and interact to evaluate
+- Individual work where coordination overhead isn't necessary
+
+**The value:** Fast feedback, discovery through experimentation, and avoiding over-planning for simple changes.
+
+### The Hybrid Approach
+
+Many developers blend approaches based on the situation:
+
+```
+Human: "I want to add OAuth2. Let me sketch a quick prototype first."
+   ↓
+[Rapid prototype—minimal LLM involvement]
+   ↓
+Human: "Okay, I see what this involves. Now let's do it properly."
+   ↓
+[Full CPF cycle based on prototype learnings]
+   ↓
+Implementation with LLM handling rigor and completeness
+```
+
+**When this works well:**
+- Validating feasibility before committing to an approach
+- De-risking unknowns through quick experiments
+- Building conviction before formal planning
+- Learning enough to specify requirements clearly
+
+**The value:** Combines the discovery benefits of experimentation with the rigor benefits of formal planning.
+
+### The Common Thread: Human Commands, LLM Navigates
+
+Regardless of working style, the **core philosophy remains consistent**:
+
+| Working Style | Human Role (Captain) | LLM Role (Navigator) |
+|--------------|---------------------|---------------------|
+| **Full Planning** | Defines intent, reviews comprehensive plan, makes strategic decisions, approves execution | Explores solution space, enumerates options, creates detailed plan, executes with precision |
+| **Iterative-Experimental** | Tries approaches, evaluates what works, decides when to formalize, sets direction | Implements quickly, handles details, keeps code consistent, documents what works |
+| **Hybrid** | Prototypes to learn, then specifies formally, approves final approach | Supports quick experiments, then brings rigor to final implementation |
+
+**The key insight:** The captain/navigator model isn't about *how much* planning you do—it's about *who does what*. Whether you're planning comprehensively or iterating rapidly:
+- **Humans** provide strategic direction and make command decisions
+- **LLMs** handle structural rigor and implementation precision
+
+### CPF Phases as Optional Checkpoints
+
+The Collaborative Planning Framework phases (ELICITATION → DESIGN → PLANNING → HANDOFF) can be viewed as **optional checkpoints** rather than mandatory sequential stages:
+
+- **Light-touch work:** Skip directly to implementation
+- **Medium-complexity:** Use ELICITATION to clarify, then implement
+- **High-complexity:** Use full cycle for comprehensive planning
+- **Exploratory:** Prototype first, then use CPF to formalize what you learned
+
+The phases exist to provide structure *when you need it*—not to impose process *when you don't*.
+
+### Validating All Approaches
+
+Both heavy planning and iterative experimentation are **legitimate and valuable working styles**:
+
+- **If you prefer comprehensive planning:** The CPF supports you with structured dialogue and thorough exploration
+- **If you prefer rapid iteration:** The framework doesn't force planning—let the LLM handle consistency while you experiment
+- **If you blend approaches:** Use planning when it helps, skip it when it doesn't
+
+The framework respects that different engineers, different tasks, and different contexts call for different approaches. What matters is that *however you work*, you maintain the human-driven, LLM-navigated discipline: you make the strategic decisions, the LLM handles the structural rigor.
 
 ---
 

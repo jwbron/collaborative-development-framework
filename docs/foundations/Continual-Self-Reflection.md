@@ -159,6 +159,65 @@ Changes to prompts or behavior can have cascading effects. Implementations shoul
 - Measure impact for a defined period before declaring success
 - Limit concurrent experiments to isolate effects
 
+### Learning Classification and Prioritization
+
+Not all learnings are equally important, and they don't all apply at the same scope. Implementations should classify learnings across two dimensions:
+
+#### Priority Classification
+
+Different insights carry different weight and urgency:
+
+| Priority | Description | Characteristics | Action Threshold |
+|----------|-------------|-----------------|------------------|
+| **Eureka** | Critical insights that fundamentally change understanding | Trumps other concerns, high confidence, significant impact | Immediate escalation and action |
+| **Important** | Substantial improvements with clear benefit | Strong evidence, meaningful impact, well-understood | Prioritize for near-term implementation |
+| **Helpful** | Incremental improvements worth making | Modest benefit, low risk, straightforward | Queue for implementation when capacity allows |
+| **Minor** | Small optimizations with limited impact | Marginal benefit, low priority | Batch with similar changes or defer |
+
+**Eureka moments** deserve special treatment—these are the insights so important that they should override normal prioritization. When an agent or human identifies a fundamental insight ("we've been approaching this problem wrong"), it should be surfaced immediately even if it disrupts current work.
+
+#### Scope Classification
+
+Learnings can apply narrowly or broadly:
+
+| Scope | Description | Example | Persistence |
+|-------|-------------|---------|-------------|
+| **Task-Specific** | Applies only to this particular task | "For *this* API integration, we need custom error handling" | Documented in task notes, not reused |
+| **Product-Specific** | Applies to this product/system/domain | "Our authentication module always needs null checks on token refresh" | Stored in product-specific learnings/docs |
+| **Organization-Wide** | Applies across all products and teams | "We always use structured logging with these specific fields" | Promoted to org-wide standards/docs |
+
+#### Managing Conflicts
+
+When learnings conflict, resolve using these principles:
+
+1. **Priority first** — Eureka insights override Important insights, which override Helpful insights
+2. **Scope specificity** — Task-specific learnings override Product-specific, which override Organization-wide (more specific wins in context)
+3. **Recency with judgment** — Newer learnings *may* supersede older ones, but only with evidence that conditions changed
+4. **Human validation required** — When automated resolution is unclear, escalate to human decision
+
+**Example conflict resolution:**
+
+```
+Conflict: Product-specific learning says "use approach A"
+         Organization-wide standard says "use approach B"
+
+Resolution: Product-specific wins (more specific context)
+           But: Flag for review—does product need an exception,
+                or should org standard be updated?
+```
+
+#### Practical Implementation
+
+Implementations should:
+
+- **Tag all learnings** with priority and scope when captured
+- **Establish clear criteria** for each priority level (don't rely on subjective judgment)
+- **Create escalation paths** for Eureka insights to reach humans quickly
+- **Review scope periodically** — Task-specific learnings that recur may deserve promotion to Product or Org scope
+- **Audit conflicts** — Track how often learnings conflict and whether resolution criteria are working
+
+This classification system prevents learnings from becoming an undifferentiated mass where everything has equal weight. It ensures that critical insights get the attention they deserve while preventing minor observations from creating noise.
+
 ---
 
 ## Design Pattern: Human-in-the-Loop Validation
