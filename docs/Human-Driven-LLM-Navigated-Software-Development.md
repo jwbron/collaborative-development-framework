@@ -20,7 +20,7 @@ This document articulates a new paradigm for software development: **human-drive
 
 **The goal:** Free human cognitive capacity for creativity, strategic thinking, and healthy collaboration by offloading structural rigor and implementation details to LLMs. This isn't about replacing humans—it's about *amplifying* what makes humans uniquely valuable.
 
-**The guiding value—rigor:** Establish precise roles and maintain them consistently. The driver/navigator metaphor isn't just a suggestion—it's a discipline that prevents the chaos of undefined collaboration. When roles are clear and consistently maintained, both humans and LLMs can operate with confidence.
+**The guiding value—rigor:** Establish precise roles and maintain them consistently. The captain/navigator metaphor isn't just a suggestion—it's a discipline that prevents the chaos of undefined collaboration. When roles are clear and consistently maintained, both humans and LLMs can operate with confidence.
 
 ---
 
@@ -42,32 +42,32 @@ This document articulates a new paradigm for software development: **human-drive
 
 ## The Core Philosophy
 
-### Driving vs. Navigating: The Destination Comes First
+### Captain and Navigator: Complementary Roles
 
-Consider the analogy of a road trip—but start with the most important insight: **navigation is meaningless without a destination.**
+Consider the analogy of a ship's voyage. **Navigation is meaningless without a destination.**
 
-A navigator can calculate the optimal route, track your position, monitor traffic, and flag hazards. But none of that matters if you don't know where you're going. The navigator cannot decide *where* to go—only *how* to get there once the destination is set.
+A navigator can chart the optimal course, track position, monitor weather, and identify hazards. But none of that matters if you don't know where you're going. The navigator cannot decide *where* to go—only *how* to get there once the destination is set.
 
-**The driver's essential role:**
-- **Decides the destination** — Where are we going? Why this place and not another?
-- **Sets priorities** — Should we prioritize speed, cost, or scenery?
-- **Makes judgment calls** — When to stop, when to take a detour, when the plan needs to change
-- **Owns the journey** — Accountable for whether the trip succeeds
+**The captain's essential role:**
+- **Sets the destination** — Where are we going? Why this destination and not another?
+- **Establishes priorities** — Should we prioritize speed, safety, or fuel efficiency?
+- **Makes command decisions** — When to change course, when to wait out a storm, when the plan needs adjustment
+- **Bears ultimate responsibility** — Accountable for the success of the voyage
 
 **The navigator's essential role:**
 - **Tracks position** — Where are we right now?
-- **Calculates routes** — What's the optimal path given current conditions?
-- **Monitors continuously** — Traffic, hazards, fuel, rest stops
-- **Provides information** — Data for the driver to make decisions
+- **Charts the course** — What's the optimal path given current conditions?
+- **Monitors continuously** — Weather, hazards, fuel, crew status
+- **Provides critical information** — Data the captain needs to make decisions
 
 This isn't about hierarchy—both roles are essential. It's about **different cognitive capabilities serving different purposes**:
 
 | Role | Responsibility | Cognitive Load |
 |------|----------------|----------------|
-| **Driver (Human)** | Decides where to go, when to stop, what route to take, owns the outcome | Creative, strategic, social, accountable |
-| **Navigator (LLM)** | Tracks current position, calculates optimal paths, monitors for hazards | Systematic, exhaustive, precise, tireless |
+| **Captain (Human)** | Sets destination and priorities, makes command decisions, bears ultimate responsibility | Creative, strategic, social, accountable |
+| **Navigator (LLM)** | Charts course, tracks position, monitors conditions, identifies hazards | Systematic, exhaustive, precise, tireless |
 
-**Why this metaphor works:** Just as a driver needs a navigator to handle the cognitive burden of tracking details, humans need LLMs to handle the structural rigor of implementation. And just as navigation is pointless without a destination, LLM execution is meaningless without human strategic direction.
+**Why this metaphor works:** Just as a captain needs a navigator to handle the cognitive burden of tracking details and charting paths, humans need LLMs to handle the structural rigor of implementation. And just as navigation is pointless without a destination, LLM execution is meaningless without human strategic direction.
 
 This is rigor in action: defining roles precisely based on who's suited for what, and maintaining the discipline to stay in your lane.
 
@@ -99,8 +99,8 @@ A significant portion of cognitive effort goes toward ensuring correctness, cons
 ┌────────────────────────────────────────────────────────────────┐
 │                    COGNITIVE LOAD REDISTRIBUTION               │
 │                                                                │
-│     HUMAN (Driver)         │      LLM (Navigator)              │
-│     ──────────────         │      ─────────────────            │
+│     HUMAN (Captain)        │      LLM (Navigator)              │
+│     ───────────────        │      ─────────────────            │
 │  • What should we build?   │  • Enumerate all edge cases       │
 │  • Why does this matter?   │  • Ensure pattern consistency     │
 │  • How does this fit?      │  • Update all call sites          │
@@ -130,7 +130,7 @@ A core principle of this model is that **feedback flows both ways**: human feedb
 - Questions during elicitation sharpen human thinking about requirements
 - Comprehensive analysis reveals blind spots in human reasoning
 
-This bidirectional improvement creates a **virtuous cycle**: the more humans and LLMs work together, the better each becomes at their respective roles. The human becomes a better driver; the LLM becomes a better navigator. The partnership compounds over time.
+This bidirectional improvement creates a **virtuous cycle**: the more humans and LLMs work together, the better each becomes at their respective roles. The human becomes a better captain; the LLM becomes a better navigator. The partnership compounds over time.
 
 ### Non-Attachment to Implementation
 
@@ -141,9 +141,9 @@ A key part of rigorous human-driven development is **not being attached to a spe
 - **Systematic A/B testing** — Compare implementations objectively rather than arguing about preferences
 - **Hypothesis-driven development** — Frame changes as experiments with measurable outcomes
 
-The driver/navigator model supports this: humans drive the *strategic intent*, not the *specific implementation*. When LLMs handle implementation details, humans naturally develop healthier distance from any particular solution—freeing them to evaluate approaches based on outcomes rather than authorship.
+The captain/navigator model supports this: humans set the *strategic intent*, not the *specific implementation*. When LLMs handle implementation details, humans naturally develop healthier distance from any particular solution—freeing them to evaluate approaches based on outcomes rather than authorship.
 
-This also connects to external research: a team that actively incorporates lessons from academic literature, industry best practices, and prior art is inherently less attached to "not invented here" solutions. The LLM navigator can surface relevant research, but the human driver decides what evidence matters.
+This also connects to external research: a team that actively incorporates lessons from academic literature, industry best practices, and prior art is inherently less attached to "not invented here" solutions. The LLM navigator can surface relevant research, but the human captain decides what evidence matters.
 
 ---
 
@@ -224,7 +224,7 @@ The human expresses what they want to accomplish, not necessarily how:
 "I want to add granular permission scopes to our API so partners can request only the access they need"
 ```
 
-This is *driving*: the human decides the destination based on business needs.
+This is *captaining*: the human sets the destination based on business needs.
 
 ### Phase 2: LLM Navigates the Solution Space
 
@@ -246,7 +246,7 @@ The LLM presents options with trade-offs. The human decides:
 - "We'll accept some increased verbosity to support fine-grained permissions"
 - "Let's prioritize clarity over backward compatibility"
 
-This is *driving*: the human makes the judgment calls.
+This is *captaining*: the human makes the command decisions.
 
 ### Phase 4: LLM Executes with Precision
 
@@ -267,7 +267,7 @@ The human reviews the implementation with fresh eyes:
 - Are there any concerns I didn't anticipate?
 - Is this something I'm comfortable deploying?
 
-This is *driving*: the human has final authority.
+This is *captaining*: the human has final authority.
 
 ---
 
@@ -421,7 +421,7 @@ Engineering organizations often rely on implicit knowledge—"everyone knows we 
 
 ## Workflow Flexibility: Supporting All Working Styles
 
-The human-driven, LLM-navigated model supports **multiple working styles**—from heavy up-front planning to iterative experimentation. The driver/navigator roles remain consistent, but how you move through the work can vary based on the task, your preferences, and what you learn along the way.
+The human-driven, LLM-navigated model supports **multiple working styles**—from heavy up-front planning to iterative experimentation. The captain/navigator roles remain consistent, but how you move through the work can vary based on the task, your preferences, and what you learn along the way.
 
 ### The Full-Planning Approach
 
@@ -499,18 +499,18 @@ Implementation with LLM handling rigor and completeness
 
 **The value:** Combines the discovery benefits of experimentation with the rigor benefits of formal planning.
 
-### The Common Thread: Human Drives, LLM Navigates
+### The Common Thread: Human Commands, LLM Navigates
 
 Regardless of working style, the **core philosophy remains consistent**:
 
-| Working Style | Human Role (Driver) | LLM Role (Navigator) |
+| Working Style | Human Role (Captain) | LLM Role (Navigator) |
 |--------------|---------------------|---------------------|
 | **Full Planning** | Defines intent, reviews comprehensive plan, makes strategic decisions, approves execution | Explores solution space, enumerates options, creates detailed plan, executes with precision |
 | **Iterative-Experimental** | Tries approaches, evaluates what works, decides when to formalize, sets direction | Implements quickly, handles details, keeps code consistent, documents what works |
 | **Hybrid** | Prototypes to learn, then specifies formally, approves final approach | Supports quick experiments, then brings rigor to final implementation |
 
-**The key insight:** The driver/navigator model isn't about *how much* planning you do—it's about *who does what*. Whether you're planning comprehensively or iterating rapidly:
-- **Humans** provide strategic direction and make judgment calls
+**The key insight:** The captain/navigator model isn't about *how much* planning you do—it's about *who does what*. Whether you're planning comprehensively or iterating rapidly:
+- **Humans** provide strategic direction and make command decisions
 - **LLMs** handle structural rigor and implementation precision
 
 ### CPF Phases as Optional Checkpoints

@@ -109,9 +109,9 @@ Each pillar addresses a fundamental question. Together, they form a complete phi
 
 **Question:** How should humans and LLMs collaborate on software development?
 
-**Answer:** Humans drive strategy (the "driver"), LLMs handle structural rigor (the "navigator").
+**Answer:** Humans set strategic direction (the "captain"), LLMs handle structural rigor (the "navigator").
 
-**Guiding Value — Rigor:** Establish precise roles and maintain them consistently. The driver/navigator metaphor isn't just a suggestion—it's a discipline that prevents the chaos of undefined collaboration.
+**Guiding Value — Rigor:** Establish precise roles and maintain them consistently. The captain/navigator metaphor isn't just a suggestion—it's a discipline that prevents the chaos of undefined collaboration.
 
 **Key Insight:**
 > Humans and LLMs have complementary cognitive strengths. Optimal software development emerges when each focuses on what they do best.
@@ -207,7 +207,7 @@ The three pillars are not independent options or sequential phases—they are mu
 
 - **Self-Improvement enhances Reviews:** Better prompts, smarter checks, fewer false positives—all from learning what works.
 
-- **The Collaboration Model governs both:** The human-as-driver principle applies whether you're reviewing code, approving improvements, or designing the system.
+- **The Collaboration Model governs both:** The human-as-captain principle applies whether you're reviewing code, approving improvements, or designing the system.
 
 - **Each pillar is incomplete without the others:** Reviews without improvement stagnate. Improvement without a collaboration model has no guardrails. Collaboration without review has no feedback loop.
 
@@ -221,7 +221,7 @@ You don't adopt these pillars sequentially—you adopt them together as aspects 
 
 **Starting point:** Begin with personal workflow improvements using existing tools.
 
-**Phase 1: Internalize the Driver/Navigator Model**
+**Phase 1: Internalize the Captain/Navigator Model**
 - Practice human-driven, LLM-navigated work with tools like Claude, Copilot, or Cursor
 - Focus on providing clear intent while letting the LLM handle implementation details
 - Develop the discipline of reviewing and approving rather than dictating every detail
@@ -246,7 +246,7 @@ You don't adopt these pillars sequentially—you adopt them together as aspects 
 **Starting point:** Establish shared practices and consistent LLM collaboration patterns.
 
 **Phase 1: Align on Collaboration Model**
-- Hold a team workshop on the driver/navigator philosophy
+- Hold a team workshop on the captain/navigator philosophy
 - Define team standards for how to work with LLMs (when to use them, how to structure tasks)
 - Create shared examples of good human-driven, LLM-navigated work
 
@@ -273,10 +273,16 @@ You don't adopt these pillars sequentially—you adopt them together as aspects 
 **Starting point:** Build infrastructure and culture that scales across teams.
 
 **Phase 1: Provide Infrastructure**
-- Standardize LLM tooling across the organization
+- Provide shared tooling that enables LLM-assisted development across the organization
 - Build centralized review automation (LLM reviewers, security scanning, pattern enforcement)
 - Create shared documentation and codebase analysis systems
 - Establish security and privacy guardrails for LLM use
+
+**Important:** While organizations benefit from shared infrastructure, embrace flexibility in how developers work with LLMs:
+- Some developers may prefer headless workflows managed through Slack and GitHub
+- Others may prefer CLI tools like Claude Code or beads
+- Still others may prefer IDE integrations like Cursor or Copilot
+- The shared infrastructure (review systems, documentation, security) should enable all these approaches rather than mandating a single tool
 
 **Phase 2: Cultivate Culture**
 - Train engineers on human-driven, LLM-navigated practices
@@ -312,7 +318,7 @@ If you're already using LLMs but want to adopt this philosophy:
 
 **Start with the biggest opportunity:**
 - If reviews are slow: Focus on building the review stack (Pillar 1)
-- If collaboration is inconsistent: Align on the driver/navigator model (Pillar 2)
+- If collaboration is inconsistent: Align on the captain/navigator model (Pillar 2)
 - If improvement is ad-hoc: Build self-reflection capabilities (Pillar 3)
 
 ### Success Indicators Across All Pillars
@@ -458,14 +464,14 @@ The framework's purpose is to help you **design systems that work for you**:
 
 ### For Individual Contributors
 
-1. **Internalize the driver/navigator model** — You drive strategic decisions; LLMs navigate details
+1. **Internalize the captain/navigator model** — You set strategic direction; LLMs navigate details
 2. **Trust appropriate automation** — If automated checks pass, focus on higher-level concerns
 3. **Give feedback intentionally** — Your input shapes how the system improves
 4. **Focus on what matters** — Strategy, architecture, business logic are your domain
 
 ### For Tech Leads
 
-1. **Model the collaboration** — Demonstrate the driver/navigator dynamic with your team
+1. **Model the collaboration** — Demonstrate the captain/navigator dynamic with your team
 2. **Establish consistent practices** — Everyone should collaborate with LLMs the same way
 3. **Champion continuous improvement** — When you see patterns, help turn them into automated checks
 4. **Track meaningful metrics** — Quality, collaboration effectiveness, improvement rate
