@@ -496,7 +496,7 @@ This captures the core goal: an LLM system that continuously improves itself wit
 |----------|-------------|
 | [A Pragmatic Guide for Software Engineering in a Post-LLM World](Pragmatic-Guide-Software-Engineering-Post-LLM-World.md) | Strategic umbrella connecting all three pillars |
 | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) | Practical guide to LLM-first review practices |
-| [Human-Driven, LLM-Navigated Development](Human-Driven-LLM-Navigated-Software-Development.md) | Philosophy for human-LLM collaboration |
+| [Human-Led, LLM-Navigated Development](Human-Led-LLM-Navigated-Software-Development.md) | Philosophy for human-LLM collaboration |
 
 ---
 

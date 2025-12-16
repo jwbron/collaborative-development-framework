@@ -18,7 +18,7 @@
 |----------|--------|
 | [Pragmatic Guide](Pragmatic-Guide-Software-Engineering-Post-LLM-World.md) | Strategic umbrella |
 | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) | Intentionality |
-| [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) | Rigor |
+| [Human-Led Development](Human-Led-LLM-Navigated-Software-Development.md) | Rigor |
 | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) | Care |
 
 ### Technical Specifications
@@ -45,7 +45,7 @@
 |-------|-----------|
 | Agent coordination | [Foundational Technical Requirements](Foundational-Technical-Requirements.md) |
 | Code review | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) |
-| Collaboration | [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) |
+| Collaboration | [Human-Led Development](Human-Led-LLM-Navigated-Software-Development.md) |
 | Self-improvement | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) |
 
 ## Status Legend

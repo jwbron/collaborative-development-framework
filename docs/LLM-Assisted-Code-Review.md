@@ -583,7 +583,7 @@ This is what intentionality looks like in practice: a deliberate choice to prote
 | Document | Description |
 |----------|-------------|
 | [A Pragmatic Guide for Software Engineering in a Post-LLM World](Pragmatic-Guide-Software-Engineering-Post-LLM-World.md) | Strategic umbrella connecting all three pillars |
-| [Human-Driven, LLM-Navigated Development](Human-Driven-LLM-Navigated-Software-Development.md) | Philosophy for human-LLM collaboration |
+| [Human-Led, LLM-Navigated Development](Human-Led-LLM-Navigated-Software-Development.md) | Philosophy for human-LLM collaboration |
 | [Radical Self-Improvement for LLMs](Radical-Self-Improvement-for-LLMs.md) | Framework for autonomous LLM self-improvement |
 
 ---

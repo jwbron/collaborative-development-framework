@@ -523,7 +523,7 @@ An implementation of CPF is successful when:
 | Document | Relationship |
 |----------|--------------|
 | [Foundational Technical Requirements](../docs/Foundational-Technical-Requirements.md) | Defines CPF as Foundation #2; establishes the seven foundations context |
-| [Human-Driven, LLM-Navigated Development](../docs/Human-Driven-LLM-Navigated-Software-Development.md) | Philosophy underlying CPF; details the driver/navigator model |
+| [Human-Led, LLM-Navigated Development](../docs/Human-Led-LLM-Navigated-Software-Development.md) | Philosophy underlying CPF; details the driver/navigator model |
 | [Pragmatic Guide](../docs/Pragmatic-Guide-Software-Engineering-Post-LLM-World.md) | Strategic umbrella connecting CPF to the three pillars |
 
 ---
