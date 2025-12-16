@@ -32,7 +32,7 @@ This document presents **Radical Self-Improvement** as a design principle: LLM s
 **Two foundational practices underpin continuous improvement:**
 
 - **External Research Integration** — Actively incorporate learnings from academic literature, industry best practices, and prior art to inform improvement hypotheses
-- **Systematic Experimentation** — Use A/B testing and hypothesis-driven development to validate that changes actually improve outcomes
+- **Evidence-Based Iteration** — Use systematic observation, before/after measurement, and hypothesis-driven development to validate that changes actually improve outcomes (formal A/B testing when scale permits; observational learning otherwise)
 
 ---
 
@@ -215,22 +215,51 @@ Self-reflection requires memory that persists across sessions. The agent should 
 - **Metrics:** Token usage, rework rates, clarification requests
 - **Experiment results:** What worked, what didn't
 
-### External Research and A/B Testing
+### Evidence-Based Iteration and External Research
 
-Self-improvement shouldn't happen in a vacuum. A truly self-improving system:
+Self-improvement shouldn't happen in a vacuum or through arbitrary changes. A truly self-improving system grounds its improvements in evidence:
 
 **Incorporates external research:**
 - Actively searches for academic literature and industry best practices relevant to detected patterns
 - Frames improvement proposals in the context of what's known to work elsewhere
 - Cites evidence when proposing changes, not just internal observations
+- Learns from prior art rather than reinventing solutions
 
-**Uses systematic experimentation:**
+**Uses evidence-based iteration:**
 - Frames improvements as testable hypotheses with predicted outcomes
-- Employs A/B testing where practical to compare approaches objectively
-- Measures actual outcomes against predictions to validate or refine hypotheses
-- Documents both successes and failures as learning for future improvement cycles
+- Measures actual outcomes against predictions to validate or refine changes
+- Tracks both quantitative metrics (token usage, time, error rates) and qualitative feedback (developer satisfaction, review comments)
+- Documents what works, what doesn't, and why
 
-This evidence-based approach prevents the system from cycling through changes without knowing if they help. It also produces valuable artifacts—documented experiments with outcomes—that inform future development and can be shared with the broader organization.
+**When formal experimentation makes sense:**
+
+For organizations with sufficient scale and volume, structured A/B testing can be valuable:
+- **Large teams** — Enough concurrent work to compare approaches across similar tasks
+- **High-volume workflows** — Sufficient repetition to achieve statistical significance
+- **Controlled environments** — Ability to isolate variables and measure outcomes
+- **Clear metrics** — Well-defined success criteria (e.g., "reduce token usage by 20%")
+
+**When observational learning is more practical:**
+
+For most teams and situations, especially with small sample sizes:
+- **Observational tracking** — Monitor changes and collect feedback without formal A/B splits
+- **Before/after comparison** — Measure performance before and after changes over a reasonable period
+- **Qualitative assessment** — Gather developer feedback and review comments
+- **Iterative refinement** — Make small changes, observe, adjust, repeat
+
+**The key insight:** The goal isn't rigorous scientific proof—it's *avoiding arbitrary changes*. Whether through formal experiments or careful observation, ensure you have evidence that changes actually improve outcomes. Don't cycle through modifications without knowing if they help.
+
+**Practical approach for most teams:**
+
+1. **Detect a pattern** — "This type of task consistently takes 2x longer than expected"
+2. **Research solutions** — Check external resources, prior art, team knowledge
+3. **Propose specific change** — "Add a summary document for this module"
+4. **Predict impact** — "Should reduce exploration time by ~30%"
+5. **Implement and observe** — Track relevant metrics for 2-4 weeks
+6. **Assess outcomes** — Did it help? By how much? Any downsides?
+7. **Document learnings** — Share what worked (or didn't) with the team
+
+This pragmatic evidence-based approach works regardless of team size or task volume. It produces valuable artifacts—documented improvements with outcomes—that inform future development and can be shared across the organization.
 
 ---
 

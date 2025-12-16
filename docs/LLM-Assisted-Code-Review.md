@@ -224,26 +224,39 @@ Many review concerns fall into an overlap zone where both LLMs and humans can co
 
 In the overlap zone, LLMs provide comprehensive analysis while humans decide what matters most for this specific change.
 
-### The Handoff Principle
+### The Handoff Principle: System Capabilities, Not Requirements
 
-When a human reviewer catches something mechanical, the response shouldn't be "please fix this"—it should be "how do we automate catching this?"
+When a human reviewer catches something mechanical, the response shouldn't be "please fix this"—it should be "how does the system automatically catch this?"
 
-This embodies a core tenet of LLM-first review: **every piece of recurring feedback should either become an automated check or be questioned as not worth giving.** If it can't be automated and isn't valuable enough to keep giving manually, perhaps it shouldn't be feedback at all.
+This embodies a core tenet of LLM-first review: **the system should make the right thing easy**. Rather than requiring engineers to follow checklists or remember rules, build capabilities that guide, detect, and automate.
+
+**Shift the language:**
+- From: "Engineers must add type hints"
+- To: "The system detects missing type hints and can propose them automatically"
+
+- From: "Engineers must not do superficial checks"
+- To: "The system detects rubber-stamping patterns and flags for deeper review"
+
+- From: "Engineers must add lint rules instead of comments"
+- To: "When recurring feedback is detected, the system proposes automating it as a lint rule"
 
 ```
 Human catches issue
         ↓
-Ask: "Can this be automated?"
+Ask: "How can the system handle this?"
         ↓
-    ┌───┴───┐
-   Yes      No
-    ↓        ↓
-Automate  Accept as
-it        human-review item
-    ↓
-Future PRs never
-have this issue
+    ┌───────┴──────┐
+   Automate      Augment
+    ↓              ↓
+System catches   System assists
+automatically    (suggestions,
+                 templates,
+    ↓            reminders)
+                    ↓
+Future PRs benefit from system capability
 ```
+
+**The philosophy:** Meet engineers where they are. Build systems that make good practices the path of least resistance, rather than expecting personal rigor to overcome friction.
 
 ---
 
@@ -309,15 +322,26 @@ When LLMs handle mechanical validation:
 - **Less repetition** — Never give the same feedback twice
 - **More sustainable pace** — Review energy isn't depleted by tedious checks
 
-### Focus on Critical Paths
+### Focus on Critical Paths: The Primacy of Accountability
 
-With LLMs providing comprehensive analysis, human reviewers can concentrate on:
+With LLMs providing comprehensive analysis, human reviewers can concentrate on what matters most:
 
-- **Accountability** — Owning the go/no-go decision for high-stakes changes
-- **Organizational context** — Applying knowledge LLMs don't have access to
+**Accountability is central** — This is the irreplaceable human contribution. When you approve a PR, you're saying "I am accountable for this change reaching production." That accountability carries weight with stakeholders, regulatory bodies, and end users in ways that automated approval cannot.
+
+The other critical paths flow from this accountability:
+
+- **Organizational context** — Applying knowledge LLMs don't have access to (roadmap, politics, constraints)
+- **Strategic prioritization** — Using LLM analysis to decide what matters most for this specific change
+- **Novel trade-offs** — Exercising judgment in unprecedented situations where patterns don't apply
+- **Stakeholder trust** — Demonstrating human oversight when partners or regulators require it
 - **Mentorship** — Building relationships and teaching judgment, not rules
-- **Strategic prioritization** — Using LLM analysis to decide what matters most
-- **Trust building** — Demonstrating human oversight when stakeholders require it
+
+**The shift in mindset:**
+
+Traditional review asks: "Did I catch all the problems?"
+LLM-first review asks: "Am I comfortable being accountable for this change?"
+
+The LLM has already caught mechanical problems and provided comprehensive analysis. Your job is to decide whether this change—with its trade-offs and implications—should move forward. That decision is inherently human.
 
 ### Better Decision Quality
 

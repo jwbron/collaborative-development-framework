@@ -37,6 +37,7 @@ This document presents a **holistic philosophy** for software engineering in the
 - [Adopting the Philosophy](#adopting-the-philosophy)
 - [Key Principles](#key-principles)
 - [What This Is Not](#what-this-is-not)
+- [Scope and Application](#scope-and-application)
 - [Getting Started](#getting-started)
 - [References](#references)
 
@@ -214,23 +215,105 @@ The three pillars are not independent options or sequential phases—they are mu
 
 ## Adopting the Philosophy
 
-You don't adopt these pillars sequentially—you adopt them together as aspects of a unified approach. However, your emphasis may vary based on context.
+You don't adopt these pillars sequentially—you adopt them together as aspects of a unified approach. However, your emphasis and starting point will vary based on scale and context.
 
-### For Teams New to LLM Collaboration
+### Adoption Path: Individual Developer
 
-**Focus first on:** Understanding the collaboration model (Pillar 2). This provides the mental framework for everything else.
+**Starting point:** Begin with personal workflow improvements using existing tools.
 
-**Then establish:** Review practices (Pillar 1) that reflect the human/LLM division of labor.
+**Phase 1: Internalize the Driver/Navigator Model**
+- Practice human-driven, LLM-navigated work with tools like Claude, Copilot, or Cursor
+- Focus on providing clear intent while letting the LLM handle implementation details
+- Develop the discipline of reviewing and approving rather than dictating every detail
 
-**Build toward:** Self-improvement capabilities (Pillar 3) as the system matures.
+**Phase 2: Structure Your Reviews**
+- Trust automated checks (linters, type checkers) to handle mechanical concerns
+- Focus your review attention on architecture, business logic, and strategic decisions
+- Build the habit of asking "should this be automated?" when you find yourself giving the same feedback
+
+**Phase 3: Reflect and Improve**
+- Track your own patterns: What tasks are difficult? What takes longer than expected?
+- Surface observations to your team: documentation gaps, unclear requirements, tool limitations
+- Propose improvements based on your experience
+
+**Success indicators:**
+- Reduced cognitive fatigue during development
+- Faster task completion without quality loss
+- More time spent on creative/strategic work vs. mechanical implementation
+
+### Adoption Path: Team
+
+**Starting point:** Establish shared practices and consistent LLM collaboration patterns.
+
+**Phase 1: Align on Collaboration Model**
+- Hold a team workshop on the driver/navigator philosophy
+- Define team standards for how to work with LLMs (when to use them, how to structure tasks)
+- Create shared examples of good human-driven, LLM-navigated work
+
+**Phase 2: Build the Review Stack**
+- Implement automated checks (pre-commit hooks, CI linters, type checkers)
+- Integrate LLM reviewers into PR workflows
+- Define where human review should focus (architecture, security, business logic)
+- Establish team conventions for when recurring feedback should become automated
+
+**Phase 3: Enable Continuous Improvement**
+- Track recurring review feedback across PRs
+- Hold retrospectives on what slows the team down
+- Systematically convert recurring issues into automated checks
+- Build team-specific documentation based on observed patterns
+
+**Success indicators:**
+- Consistent velocity without heroic effort
+- Reduced review iteration counts
+- Faster PR turnaround time
+- More substantive review discussions (less nitpicking)
+
+### Adoption Path: Organization
+
+**Starting point:** Build infrastructure and culture that scales across teams.
+
+**Phase 1: Provide Infrastructure**
+- Standardize LLM tooling across the organization
+- Build centralized review automation (LLM reviewers, security scanning, pattern enforcement)
+- Create shared documentation and codebase analysis systems
+- Establish security and privacy guardrails for LLM use
+
+**Phase 2: Cultivate Culture**
+- Train engineers on human-driven, LLM-navigated practices
+- Establish organizational standards for code quality and review
+- Create forums for sharing learnings and best practices
+- Recognize and reward effective human-LLM collaboration
+
+**Phase 3: Enable Self-Improvement at Scale**
+- Build systems that surface patterns across teams (common documentation gaps, recurring issues)
+- Create feedback loops from reviews to automated checks
+- Implement organizational learning: successful practices in one team inform others
+- Measure and track improvement: token efficiency, quality metrics, developer satisfaction
+
+**Success indicators:**
+- Consistent quality across teams
+- Knowledge sharing and reduced duplication of effort
+- Measurable improvement in development velocity and code quality
+- High developer satisfaction with tools and processes
 
 ### For Teams Already Using LLM Tools
 
-**Assess:** Are your review practices keeping pace with LLM output speed? (Pillar 1)
+If you're already using LLMs but want to adopt this philosophy:
 
-**Clarify:** Is there a consistent collaboration model, or does each team member interact with LLMs differently? (Pillar 2)
+**Assess your current state:**
+- **Pillar 1 (Reviews):** Are review practices keeping pace with LLM output speed? Is human attention focused on strategic concerns?
+- **Pillar 2 (Collaboration):** Is there a consistent model, or does each person interact with LLMs differently?
+- **Pillar 3 (Improvement):** Are you learning from experience, or making the same mistakes repeatedly?
 
-**Enable:** Are you learning from your experience, or making the same mistakes repeatedly? (Pillar 3)
+**Identify your gaps:**
+- Which pillar needs the most attention?
+- Where are the bottlenecks in your current workflow?
+- What friction points keep recurring?
+
+**Start with the biggest opportunity:**
+- If reviews are slow: Focus on building the review stack (Pillar 1)
+- If collaboration is inconsistent: Align on the driver/navigator model (Pillar 2)
+- If improvement is ad-hoc: Build self-reflection capabilities (Pillar 3)
 
 ### Success Indicators Across All Pillars
 
@@ -275,10 +358,13 @@ Static systems cannot keep pace. The system should get better over time:
 
 ### 5. Ground Decisions in Evidence
 
-All three pillars benefit from active incorporation of external research and systematic experimentation:
+All three pillars benefit from active incorporation of external research and evidence-based iteration:
 - **External research** informs decisions across review practices, collaboration models, and self-improvement strategies
-- **A/B testing and hypothesis-driven development** validate that changes actually improve outcomes rather than just feeling right
-- Evidence-based practice prevents both humans and systems from cycling through changes without knowing if they help
+- **Evidence-based iteration** validates that changes actually improve outcomes rather than just feeling right
+  - Formal A/B testing when you have the scale and volume
+  - Observational learning and before/after measurement for most situations
+  - The key is avoiding arbitrary changes—have *some* evidence that changes help
+- Evidence-based practice prevents both humans and systems from cycling through modifications without knowing their impact
 
 ### 6. Transparency and Observability
 
@@ -314,6 +400,51 @@ Even self-improving systems need:
 - Periodic review of system behavior
 - Adjustment as requirements change
 - Intervention when things go wrong
+
+---
+
+## Scope and Application
+
+### What This Framework Is
+
+This is a **philosophy and set of principles** for software engineering in the LLM era—not a tool specification, not a product, not a rigid methodology. It guides how you think about and design your development systems, but it doesn't prescribe specific implementations.
+
+**Key characteristics:**
+- **Philosophy-first** — A way of thinking about human-LLM collaboration
+- **Tool-agnostic** — No specific platforms or products required
+- **Implementation-flexible** — Adapt to your context and constraints
+- **Scale-independent** — Applies from individual to organization level
+
+### Where This Applies
+
+The framework operates at multiple scales:
+
+| Scale | Application | Example |
+|-------|-------------|---------|
+| **Individual** | A developer using LLM tools to augment their work | Using Claude/Copilot with intentional human-driven practices |
+| **Team** | A group adopting consistent LLM collaboration patterns | Shared code review workflows, planning frameworks |
+| **Organization** | Company-wide infrastructure and cultural practices | Centralized LLM tools, standardized quality processes |
+
+**Important:** You don't need organization-wide adoption to benefit. An individual developer can practice these principles with existing tools. A team can adopt shared practices without infrastructure changes. Organizations can build comprehensive systems when ready.
+
+### What You Don't Need
+
+This framework does **not** require:
+- Specific LLM platforms (works with Claude, GPT, Copilot, etc.)
+- Custom tooling (though it can inform tool-building)
+- Specialized infrastructure (start with what you have)
+- Organizational transformation (begin where you are)
+
+### The Goal: Guiding System Design
+
+The framework's purpose is to help you **design systems that work for you**:
+
+- If you're building LLM tooling, these principles shape your design decisions
+- If you're adopting existing tools, these principles guide how you use them
+- If you're establishing team practices, these principles inform your processes
+- If you're an individual contributor, these principles structure your workflow
+
+**The framework succeeds when it helps you build better systems—whether those "systems" are personal habits, team workflows, or organizational infrastructure.**
 
 ---
 
