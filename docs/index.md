@@ -33,6 +33,12 @@
 | Continual Self-Reflection | **Draft** | [foundations/Continual-Self-Reflection.md](foundations/Continual-Self-Reflection.md) |
 | Security Architecture | **Draft** | [foundations/Security-Design-for-Autonomous-Agents.md](foundations/Security-Design-for-Autonomous-Agents.md) |
 
+### Planning
+
+| Document | Status | Purpose |
+|----------|--------|---------|
+| [Ian's Feedback Action Plan](planning/Action-Plan-Ians-Feedback.md) | **Draft** | Action plan for addressing framework feedback |
+
 ## By Topic
 
 | Topic | Documents |
