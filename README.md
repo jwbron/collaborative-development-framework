@@ -27,7 +27,7 @@ The framework is built on three mutually reinforcing pillars:
 | Pillar | Core Question | Guiding Value |
 |--------|---------------|---------------|
 | **LLM-First Code Reviews** | Where should human attention focus? | Intentionality |
-| **Human-Driven, LLM-Navigated Development** | How should humans and LLMs collaborate? | Rigor |
+| **Human-Led, LLM-Navigated Development** | How should humans and LLMs collaborate? | Rigor |
 | **Radical Self-Improvement** | How do systems get better over time? | Care |
 
 ## Core Thesis
@@ -39,7 +39,7 @@ Software engineering practices must evolve to leverage LLM strengths (exhaustive
 - **[Pragmatic Guide](docs/Pragmatic-Guide-Software-Engineering-Post-LLM-World.md)** - Strategic umbrella connecting all three pillars
 - **[Foundational Technical Requirements](docs/Foundational-Technical-Requirements.md)** - The seven technical foundations for implementation
 - **[LLM-First Code Reviews](docs/LLM-Assisted-Code-Review.md)** - Pillar 1: Intentionality in review
-- **[Human-Driven Development](docs/Human-Driven-LLM-Navigated-Software-Development.md)** - Pillar 2: Rigor in collaboration
+- **[Human-Led Development](docs/Human-Led-LLM-Navigated-Software-Development.md)** - Pillar 2: Rigor in collaboration
 - **[Radical Self-Improvement](docs/Radical-Self-Improvement-for-LLMs.md)** - Pillar 3: Care in continuous improvement
 
 ## The Seven Technical Foundations

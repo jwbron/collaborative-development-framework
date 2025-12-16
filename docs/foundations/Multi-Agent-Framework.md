@@ -466,7 +466,7 @@ This spec provides the conceptual foundation. Implementation requires adapting t
 | Document | Relationship |
 |----------|--------------|
 | [Foundational Technical Requirements](../Foundational-Technical-Requirements.md) | Parent document defining all seven foundations |
-| [Human-Driven Development](../Human-Driven-LLM-Navigated-Software-Development.md) | The collaboration model agents operate within |
+| [Human-Driven Development](../Human-Led-LLM-Navigated-Software-Development.md) | The collaboration model agents operate within |
 | [LLM-First Code Reviews](../LLM-Assisted-Code-Review.md) | A primary consumer of multi-agent pipelines |
 | [Radical Self-Improvement](../Radical-Self-Improvement-for-LLMs.md) | How multi-agent systems improve over time |
 

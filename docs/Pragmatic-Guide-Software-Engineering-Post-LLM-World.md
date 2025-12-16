@@ -20,7 +20,7 @@ This document presents a **holistic philosophy** for software engineering in the
 | Pillar | Core Question | Guiding Value | Document |
 |--------|---------------|---------------|----------|
 | **1. LLM-First Code Reviews** | Where should human attention focus? | Intentionality | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) |
-| **2. Human-Driven, LLM-Navigated Development** | How should humans and LLMs collaborate? | Rigor | [Human-Driven, LLM-Navigated Software Development](Human-Driven-LLM-Navigated-Software-Development.md) |
+| **2. Human-Led, LLM-Navigated Development** | How should humans and LLMs collaborate? | Rigor | [Human-Led, LLM-Navigated Software Development](Human-Led-LLM-Navigated-Software-Development.md) |
 | **3. Radical Self-Improvement** | How do systems get better over time? | Care | [Radical Self-Improvement for LLMs](Radical-Self-Improvement-for-LLMs.md) |
 
 **The core thesis:** Software engineering practices must evolve to leverage LLM strengths (exhaustive attention, pattern consistency, tireless execution) while preserving human strengths (strategic judgment, creative problem-solving, interpersonal collaboration). Each pillar addresses a different dimension of this evolution, and together they form a complete, pragmatic philosophy.
@@ -105,7 +105,7 @@ Each pillar addresses a fundamental question. Together, they form a complete phi
 
 ---
 
-### Pillar 2: Human-Driven, LLM-Navigated Development
+### Pillar 2: Human-Led, LLM-Navigated Development
 
 **Question:** How should humans and LLMs collaborate on software development?
 
@@ -134,7 +134,7 @@ Each pillar addresses a fundamental question. Together, they form a complete phi
 
 **Connection to Other Pillars:** This model defines how humans and LLMs interact during review (Pillar 1) and improvement (Pillar 3). It's the philosophical foundation that unifies the framework.
 
-**Read more:** [Human-Driven, LLM-Navigated Software Development](Human-Driven-LLM-Navigated-Software-Development.md)
+**Read more:** [Human-Led, LLM-Navigated Software Development](Human-Led-LLM-Navigated-Software-Development.md)
 
 ---
 
@@ -493,7 +493,7 @@ The framework's purpose is to help you **design systems that work for you**:
 |----------|---------------|-------|
 | [Foundational Technical Requirements](Foundational-Technical-Requirements.md) | — | Technical foundations for implementing the vision |
 | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) | Intentionality | Practical guide to LLM-assisted review |
-| [Human-Driven, LLM-Navigated Development](Human-Driven-LLM-Navigated-Software-Development.md) | Rigor | Collaboration philosophy |
+| [Human-Led, LLM-Navigated Development](Human-Led-LLM-Navigated-Software-Development.md) | Rigor | Collaboration philosophy |
 | [Radical Self-Improvement for LLMs](Radical-Self-Improvement-for-LLMs.md) | Care | Autonomous improvement framework |
 
 ### External Resources

@@ -17,7 +17,7 @@ Before diving into technical requirements, we establish the methodology for deve
 
 ### The Four Phases
 
-> **Note on Phase Terminology:** CPF has two complementary phase sequences depending on context. This document uses the **strategic planning** phases (IDEATION → ASSESSMENT → REINFORCEMENT → PLANNING) for evaluating and shaping new initiatives. The [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) document describes the **implementation workflow** phases (ELICITATION → DESIGN → PLANNING → HANDOFF) for executing approved work. Both are part of CPF—one for deciding *what* to build, the other for *how* to build it.
+> **Note on Phase Terminology:** CPF has two complementary phase sequences depending on context. This document uses the **strategic planning** phases (IDEATION → ASSESSMENT → REINFORCEMENT → PLANNING) for evaluating and shaping new initiatives. The [Human-Led Development](Human-Led-LLM-Navigated-Software-Development.md) document describes the **implementation workflow** phases (ELICITATION → DESIGN → PLANNING → HANDOFF) for executing approved work. Both are part of CPF—one for deciding *what* to build, the other for *how* to build it.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -403,7 +403,7 @@ Phase 6: Self-Reflection
 **Deliverables:**
 - This document (Foundational Technical Requirements)
 - Umbrella document (Pragmatic Guide)
-- Pillar documents (LLM-First Reviews, Human-Driven Development, Self-Improvement)
+- Pillar documents (LLM-First Reviews, Human-Led Development, Self-Improvement)
 
 **Exit Criteria:**
 - Human approval of strategic direction
@@ -529,7 +529,7 @@ Organizations should define specific targets based on their baseline measurement
 |----------|---------|
 | [Pragmatic Guide](Pragmatic-Guide-Software-Engineering-Post-LLM-World.md) | Philosophy umbrella |
 | [LLM-First Code Reviews](LLM-Assisted-Code-Review.md) | Pillar 1 |
-| [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) | Pillar 2 |
+| [Human-Led Development](Human-Led-LLM-Navigated-Software-Development.md) | Pillar 2 |
 | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) | Pillar 3 |
 
 ---

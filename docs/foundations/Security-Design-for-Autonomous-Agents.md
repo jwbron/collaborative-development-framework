@@ -599,7 +599,7 @@ Humans must always be able to:
 |----------|--------------|
 | [Foundational Technical Requirements](Foundational-Technical-Requirements.md) | Parent document defining seven foundations |
 | [Pragmatic Guide](Pragmatic-Guide-Software-Engineering-Post-LLM-World.md) | Philosophy umbrella |
-| [Human-Driven Development](Human-Driven-LLM-Navigated-Software-Development.md) | Human oversight principles |
+| [Human-Led Development](Human-Led-LLM-Navigated-Software-Development.md) | Human oversight principles |
 | [Radical Self-Improvement](Radical-Self-Improvement-for-LLMs.md) | Self-monitoring and improvement |
 
 ---
